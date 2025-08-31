@@ -1,0 +1,109 @@
+﻿{
+  "title": "Week 2 – Unit 1 (Present Perfect + Personal Statement)",
+  "targets": [
+    "Vocabulary: 20–25 كلمة عن المهارات والإنجازات والأهداف",
+    "Grammar: Present Perfect (meaning now) vs Past Simple (+ for/since / ever/never/just/already/yet)",
+    "Reading: فكرة عامة + تفاصيل + مرادفات في السياق",
+    "Listening: استماع موجّه عن الانضمام للأنشطة وبناء السيرة",
+    "Writing: Personal Statement (مقدّمة + جسم + خاتمة) 6–8 جمل"
+  ],
+  "vocabulary": [
+    {"w":"strength","ar":"نقطة قوة/ميزة","ex":"My strength is being organized."},
+    {"w":"weakness","ar":"نقطة ضعف","ex":"A common weakness is procrastination."},
+    {"w":"goal","ar":"هدف","ex":"My goal is to pass the exam."},
+    {"w":"achievement","ar":"إنجاز","ex":"I have achieved better grades this term."},
+    {"w":"experience","ar":"خبرة/تجربة","ex":"I have some experience in teamwork."},
+    {"w":"apply (for)","ar":"يتقدّم (لوظيفة/نشاط)","ex":"I will apply for the English club."},
+    {"w":"application","ar":"طلب/استمارة","ex":"Please complete the application form."},
+    {"w":"volunteer","ar":"يتطوّع/متطوّع","ex":"I have volunteered at school events."},
+    {"w":"skill","ar":"مهارة","ex":"Communication is an important skill."},
+    {"w":"teamwork","ar":"العمل الجماعي","ex":"Teamwork helps us learn faster."},
+    {"w":"leadership","ar":"قيادة","ex":"She has leadership potential."},
+    {"w":"commitment","ar":"التزام","ex":"Show commitment by studying daily."},
+    {"w":"motivation","ar":"دافعية/تحفيز","ex":"Motivation makes practice easier."},
+    {"w":"opportunity","ar":"فرصة","ex":"This club is a great opportunity."},
+    {"w":"challenge","ar":"تحدٍّ","ex":"The project was a big challenge."},
+    {"w":"responsible","ar":"مسؤول","ex":"He is responsible and polite."},
+    {"w":"organized","ar":"منظّم","ex":"I am organized with my time."},
+    {"w":"deadline","ar":"موعد نهائي","ex":"We met the deadline last week."},
+    {"w":"improve","ar":"يُحسّن","ex":"I want to improve my writing."},
+    {"w":"confidence","ar":"ثقة بالنفس","ex":"My confidence has increased recently."}
+  ],
+  "grammar": [
+    {
+      "title": "Present Perfect (meaning now)",
+      "when": "خبر/خبرة تؤثر الآن أو نتيجة حاليّة",
+      "form": "have/has + V3",
+      "signals": ["ever","never","already","just","yet","recently","so far","for","since"]
+    },
+    {
+      "title": "Past Simple",
+      "when": "حدث مكتمل في زمن محدّد بالماضي",
+      "form": "V2 (regular: -ed / irregular: went, saw, ...)",
+      "signals": ["yesterday","last week/year","in 2022","when I was ..."]
+    },
+    {
+      "title": "for / since",
+      "when": "مدة زمنية (for two years) / نقطة بداية (since 2023)",
+      "form": "have/has + V3 + for/since + time",
+      "signals": ["for two weeks","since Monday"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"I ___ (just / finish) my homework.","choices":["just finish","have just finished","am just finishing"],"a":1},
+    {"type":"mcq","q":"She ___ (join) the club last week.","choices":["has joined","joined","has just joined"],"a":1},
+    {"type":"mcq","q":"We ___ (know) each other since 2022.","choices":["knew","have known","are knowing"],"a":1},
+    {"type":"tf","q":"'yesterday' → Present Perfect.", "a": false},
+    {"type":"fill","q":"He ____ (never/try) volunteering before.", "a":"has never tried"}
+  ],
+  "reading": {
+    "pre": "توقّع: لماذا يساعد الانضمام للأندية المدرسية في تحسين اللغة والسيرة الذاتية؟",
+    "text": "At the Freshers’ Club Fair, many students look for activities that match their goals. Some clubs offer short workshops that build confidence and teamwork. After joining, students often notice real progress in communication. They also write about these experiences in their personal statements, which show commitment and motivation.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is that clubs can:","choices":["waste time","improve skills and statements","replace exams"],"a":1},
+      {"type":"tf","q":"Workshops at the fair are usually long and difficult.", "a": false},
+      {"type":"mcq","q":"The word 'these experiences' refers to:","choices":["goals","workshops and club activities","exams"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u02/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker talks about small achievements in clubs.", "a": true},
+      {"type":"mcq","q":"He recommends writing a:","choices":["personal statement","short story","formal report only"],"a":0}
+    ]
+  },
+  "writing": {
+    "prompt": "Personal Statement – اكتب فقرة 6–8 جمل: (1) مقدّمة قصيرة عنك، (2) مهارتان/إنجازان (Present Perfect عند الحاجة)، (3) هدفك وكيف ستطبّق خطوة يومية.",
+    "tips": [
+      "Use Present Perfect for recent results: I have improved my speaking.",
+      "Use Past Simple for finished time: I joined the club last week.",
+      "Keep sentences short. Check spelling and -s / -ed."
+    ],
+    "rubric": ["وضوح الفكرة","ترابط بسيط","قواعد (Perfect vs Past)","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"I ___ (ever / be) to a debate club.","choices":["was ever","have ever been","am ever"],"a":1},
+      {"type":"mcq","q":"She ___ (already / write) her application.","choices":["already writes","has already written","already wrote"],"a":1},
+      {"type":"tf","q":"'last year' → Past Simple.", "a": true},
+      {"type":"mcq","q":"They ___ (not / finish) the form yet.","choices":["do not finish","have not finished","are not finishing"],"a":1},
+      {"type":"fill","q":"We ____ (know) our teacher since September.", "a":"have known"},
+      {"type":"mcq","q":"He ___ (join) the English club in 2023.","choices":["has joined","joined","has just joined"],"a":1},
+      {"type":"mcq","q":"I ___ (never / try) volunteering before.","choices":["never tried","have never tried","am never trying"],"a":1},
+      {"type":"tf","q":"'for two months' fits Present Perfect.", "a": true},
+      {"type":"mcq","q":"She ___ (just / improve) her writing.","choices":["has just improved","just improves","just improved"],"a":0},
+      {"type":"fill","q":"They ____ (be) very organized last week.", "a":"were"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 3
+  }
+}

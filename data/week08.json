@@ -1,0 +1,114 @@
+﻿{
+  "title": "Week 8 – Unit 8 (In Business): Reported orders/advice + Causative have/get + in/on + noun",
+  "targets": [
+    "Vocabulary: 20–24 كلمة أعمال (عميل/مورد/فاتورة/تسليم/خصم/مخزون...)",
+    "Grammar: reported orders/advice (tell/ask/warn/advise + object + to V / not to V)",
+    "Grammar: causative (have/get + object + V3) لترتيب إنجاز العمل",
+    "Grammar: in/on + noun (in stock, in charge, on sale, on time, on hold, in progress...)",
+    "Reading: فكرة عامة + تفاصيل + مرجع ضمير",
+    "Listening: استماع موجّه عن متابعة طلبية/تحديث موقع",
+    "Writing: بريد أعمال قصير 6–8 جمل يحتوي على هدف القواعد"
+  ],
+  "vocabulary": [
+    {"w":"customer","ar":"عميل","ex":"The customer asked for a refund."},
+    {"w":"supplier","ar":"مُورِّد","ex":"We contacted the supplier."},
+    {"w":"order","ar":"طلبية/يطلب","ex":"We placed an order yesterday."},
+    {"w":"invoice","ar":"فاتورة","ex":"Please send the invoice today."},
+    {"w":"delivery","ar":"تسليم","ex":"The delivery will arrive on time."},
+    {"w":"discount","ar":"خصم","ex":"We offer a 10% discount this week."},
+    {"w":"budget","ar":"ميزانية","ex":"Our budget is limited."},
+    {"w":"profit","ar":"ربح","ex":"They made a small profit."},
+    {"w":"cost","ar":"تكلفة","ex":"The cost is reasonable."},
+    {"w":"revenue","ar":"إيرادات","ex":"Revenue increased last month."},
+    {"w":"stock","ar":"مخزون","ex":"The item is in stock."},
+    {"w":"out of stock","ar":"غير متوفر","ex":"This model is out of stock."},
+    {"w":"promotion","ar":"ترقية/عرض ترويجي","ex":"We launched a promotion."},
+    {"w":"advertisement (ad)","ar":"إعلان","ex":"We designed a new ad."},
+    {"w":"launch","ar":"إطلاق","ex":"They will launch a new product."},
+    {"w":"policy","ar":"سياسة","ex":"It is our return policy."},
+    {"w":"refund","ar":"استرداد","ex":"We issued a refund."},
+    {"w":"warranty","ar":"كفالة/ضمان","ex":"The warranty is for one year."},
+    {"w":"department","ar":"قسم","ex":"She works in the IT department."},
+    {"w":"manager","ar":"مدير/مديرة","ex":"The manager is in charge of sales."},
+    {"w":"colleague","ar":"زميل عمل","ex":"I met my new colleague."},
+    {"w":"update","ar":"تحديث/يحدّث","ex":"Please update the website banner."},
+    {"w":"feedback","ar":"تغذية راجعة","ex":"We collected customer feedback."}
+  ],
+  "grammar": [
+    {
+      "title": "Reported orders/advice",
+      "when": "نقل أوامر/نصائح بصيغة غير مباشرة",
+      "form": "tell/ask + object + to V | told/asked + object + to V | negative: told/asked + object + not to V | advise/warn + object + to V",
+      "signals": ["He told me to be on time.","She asked us not to use phones.","The teacher advised us to prepare."]
+    },
+    {
+      "title": "Causative (have/get + object + V3)",
+      "when": "ترتيب إنجاز عمل بواسطة شخص/جهة أخرى",
+      "form": "have/get + object + V3 (We had the logo redesigned.)",
+      "signals": ["had the report printed","got the window fixed"]
+    },
+    {
+      "title": "in/on + noun (Business Phrases)",
+      "when": "تعبيرات ثابتة في سياق الأعمال",
+      "form": "in stock, in charge (of), in progress, in writing, in debt | on sale, on time, on schedule, on hold",
+      "signals": ["The item is in stock.","The old phones are on sale."]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"The manager told us ___ (be) on time.","choices":["be","to be","being"],"a":1},
+    {"type":"mcq","q":"She asked me ___ (send) the invoice.","choices":["send","to send","sending"],"a":1},
+    {"type":"mcq","q":"We ___ our website updated last week.","choices":["had","made","did"],"a":0},
+    {"type":"tf","q":"'get something done' يعني ترتّب أن يقوم شخص آخر بالعمل.","a": true},
+    {"type":"fill","q":"The old phones are ____ sale this week.","a":"on"}
+  ],
+  "reading": {
+    "pre": "توقّع: لماذا تعتمد المتاجر الصغيرة على آراء العملاء قبل إطلاق عرض جديد؟",
+    "text": "A local student team ran a small online store for school supplies. Before launching a new discount, the manager asked them to collect customer feedback and update the website banner. They designed a short survey and had the results analyzed by a colleague in the IT department. The data showed that pens and notebooks were in high demand, so the team put older models on sale. By the end of the week, the items were back in stock, and orders arrived on time. The team learned that simple changes, based on real feedback, can improve results quickly.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is that the team:","choices":["ignored feedback and failed","used feedback to make simple changes","stopped the online store"],"a":1},
+      {"type":"tf","q":"They had the survey results analyzed by someone in IT.","a": true},
+      {"type":"mcq","q":"'on sale' in the text means:","choices":["not available","with a discount","very expensive"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u08/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker asked the team to send the invoice today.","a": true},
+      {"type":"mcq","q":"He advised them to:","choices":["delay the delivery","update the banner and be on time","stop the promotion"],"a":1}
+    ]
+  },
+  "writing": {
+    "prompt": "اكتب بريد أعمال قصير (6–8 جمل) إلى المورّد/المدير: (1) استفسار/تحديث، (2) جملة reported order/advice (told/asked/advised + object + to/not to), (3) جملة causative (have/get + object + V3), (4) عبارة in/on + noun واحدة.",
+    "tips": [
+      "Use 'told/asked + me/us + to V' | 'not to V' للنفي.",
+      "Use 'have/get + object + V3': We had the posters printed.",
+      "Use business phrases: in stock / on sale / on time / in charge."
+    ],
+    "rubric": ["وضوح الهدف","دقة reported/causative","تعبير in/on صحيح","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"The manager told us ___ (be) ready by 10.","choices":["be","to be","being"],"a":1},
+      {"type":"mcq","q":"She asked me ___ (send) the invoice.","choices":["to send","sending","to sending"],"a":0},
+      {"type":"tf","q":"'told' في reported orders يحتاج مفعولاً (object).","a": true},
+      {"type":"mcq","q":"We ___ our logo redesigned last week.","choices":["had","made","let"],"a":0},
+      {"type":"fill","q":"They ____ their website updated yesterday.","a":"had"},
+      {"type":"mcq","q":"The items are ___ stock now.","choices":["on","in","at"],"a":1},
+      {"type":"mcq","q":"The old phones are ___ sale this week.","choices":["in","on","at"],"a":1},
+      {"type":"mcq","q":"He told me ___ (not / use) my phone in the meeting.","choices":["to not use","not to use","don't use"],"a":1},
+      {"type":"tf","q":"Causative = have/get + object + V3.","a": true},
+      {"type":"mcq","q":"The teacher advised us ___ (prepare) a budget.","choices":["prepare","to prepare","preparing"],"a":1}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 9
+  }
+}

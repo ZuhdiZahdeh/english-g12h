@@ -1,0 +1,114 @@
+﻿{
+  "title": "Week 5 – Unit 3 (A funny thing happened): Past S/Cont./Perfect + Narrative",
+  "targets": [
+    "Vocabulary: 20–25 كلمة مرتبطة بالسرد والحوادث الطريفة والتسلسل الزمني",
+    "Grammar: Past Simple vs Past Continuous vs Past Perfect (متى نستخدم؟ تكوين؟ إشارات زمنية؟)",
+    "Reading: فكرة عامة + تفاصيل + مرجع الضمائر + مفردات في السياق",
+    "Listening: استماع موجّه عن موقف حدث في الطريق إلى المدرسة",
+    "Writing: Narrative 6–8 جمل بأدوات ترتيب + while/when + Past Perfect"
+  ],
+  "vocabulary": [
+    {"w":"suddenly","ar":"فجأة","ex":"Suddenly, the bus stopped."},
+    {"w":"while","ar":"بينما (خلال)","ex":"While I was walking, it started to rain."},
+    {"w":"when","ar":"عندما","ex":"When I reached the gate, it was closed."},
+    {"w":"at first","ar":"في البداية","ex":"At first, I was worried."},
+    {"w":"then","ar":"ثمّ","ex":"Then we called the teacher."},
+    {"w":"finally","ar":"أخيرًا","ex":"Finally, everything was fine."},
+    {"w":"crowd","ar":"حشد/ناس كثيرون","ex":"A small crowd was laughing."},
+    {"w":"pavement","ar":"رصيف","ex":"I slipped on the wet pavement."},
+    {"w":"crosswalk","ar":"ممر مشاة","ex":"We waited at the crosswalk."},
+    {"w":"spill","ar":"يسكب/ينسكب","ex":"He spilled his juice."},
+    {"w":"repair","ar":"يصلّح","ex":"They repaired the bike quickly."},
+    {"w":"apologize","ar":"يعتذر","ex":"He apologized to me."},
+    {"w":"notice","ar":"يلحظ/ينتبه","ex":"I noticed a funny sign."},
+    {"w":"realize","ar":"يدرك","ex":"I realized it was my mistake."},
+    {"w":"embarrassed","ar":"محرَج","ex":"I felt embarrassed but I laughed."},
+    {"w":"nervous","ar":"متوتّر","ex":"She was nervous before the story."},
+    {"w":"excited","ar":"متحمّس","ex":"We were excited to join them."},
+    {"w":"accident","ar":"حادث (عرضي)","ex":"It was a small accident."},
+    {"w":"event","ar":"حدث","ex":"The event happened quickly."},
+    {"w":"break down","ar":"يتعطّل (مركبة)","ex":"Our bus broke down on the way."},
+    {"w":"call","ar":"يتّصل/ينادي","ex":"We called for help."},
+    {"w":"laugh","ar":"يضحك","ex":"Everyone laughed at the joke."},
+    {"w":"upset","ar":"منزعج/يزعج","ex":"He was upset at first."},
+    {"w":"luckily","ar":"لحسن الحظ","ex":"Luckily, nobody was hurt."}
+  ],
+  "grammar": [
+    {
+      "title": "Past Simple (PS)",
+      "when": "حدث مكتمل في زمن محدد بالماضي",
+      "form": "V2 (worked/went) | النفي: did not + V | السؤال: did + S + V",
+      "signals": ["yesterday","last night/week","in 2022","then","at 7 o'clock"]
+    },
+    {
+      "title": "Past Continuous (PC)",
+      "when": "عمل مستمر في لحظة ماضية/خلفية قصة؛ غالبًا مع while/when",
+      "form": "was/were + V-ing",
+      "signals": ["while","when","as","at that moment"]
+    },
+    {
+      "title": "Past Perfect (PP)",
+      "when": "حدث سابق لحدث ماضٍ آخر (الأقدم أولًا)",
+      "form": "had + V3",
+      "signals": ["by the time","after","before","already","just"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"I ___ (walk) home when I ___ (hear) a loud noise.","choices":["walked / was hearing","was walking / heard","was walking / was hearing"],"a":1},
+    {"type":"mcq","q":"By the time we ___ (arrive), the film ___ (start).","choices":["arrived / had started","had arrived / started","arrived / started"],"a":0},
+    {"type":"mcq","q":"She ___ (break) her phone yesterday.","choices":["has broken","broke","was breaking"],"a":1},
+    {"type":"tf","q":"'while' تُستخدم غالبًا مع Past Continuous.","a": true},
+    {"type":"fill","q":"He ____ (wait) at the bus stop when the bus ____ (arrive).","a":"was waiting; arrived"}
+  ],
+  "reading": {
+    "pre": "توقّع: ماذا يمكن أن يحدث في الطريق إلى المدرسة ويجعلك تضحك في النهاية؟",
+    "text": "On my way to school, something funny happened. I was walking past the bakery when a boy dropped a bag of bread. Suddenly, the loaves rolled onto the pavement like little wheels. People started laughing, and the boy laughed too. I helped him collect the bread. By the time we reached the door, he had picked up every loaf. Finally, he thanked me, and we both continued with big smiles.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is:","choices":["A serious accident happened.","A small funny event on the way to school.","The bakery was closed."],"a":1},
+      {"type":"tf","q":"The narrator was running when the event happened.","a": false},
+      {"type":"mcq","q":"'he had picked up every loaf' shows:","choices":["Past Continuous","Past Perfect","Present Perfect"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u05/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker describes a funny event before class.", "a": true},
+      {"type":"mcq","q":"He felt ___ at first, but later he laughed.","choices":["angry","embarrassed","sleepy"],"a":1}
+    ]
+  },
+  "writing": {
+    "prompt": "اكتب قصة قصيرة (6–8 جمل) عن موقف طريف: استخدم First/Then/Suddenly/Finally + جملة while/when + جملة Past Perfect واحدة.",
+    "tips": [
+      "Use Past Simple for main actions: I opened the door, I helped him.",
+      "Use Past Continuous for background: I was walking when...",
+      "Use Past Perfect for earlier action: He had dropped the bag before I arrived.",
+      "Keep sentences short. Check verbs (-ed / irregular)."
+    ],
+    "rubric": ["تسلسل واضح","صحة الأزمنة","مفردات مناسبة","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"I ___ (see) her while she ___ (wait) for the bus.","choices":["saw / was waiting","was seeing / waited","saw / waited"],"a":0},
+      {"type":"mcq","q":"They ___ (finish) the game before it ___ (rain).","choices":["finished / had rained","had finished / rained","finished / rained"],"a":1},
+      {"type":"tf","q":"'last night' → Past Simple.", "a": true},
+      {"type":"mcq","q":"He ___ (drop) the keys and everyone ___ (laugh).","choices":["was dropping / was laughing","dropped / laughed","has dropped / laughed"],"a":1},
+      {"type":"fill","q":"By the time we arrived, the bus ____ (leave).","a":"had left"},
+      {"type":"mcq","q":"She ___ (not / notice) the sign at first.","choices":["did not notice","was not noticing","had not noticed (at first)"],"a":0},
+      {"type":"mcq","q":"We ___ (walk) home when it ___ (start) to rain.","choices":["walked / started","were walking / started","were walking / was starting"],"a":1},
+      {"type":"tf","q":"Past Perfect = had + V3.", "a": true},
+      {"type":"mcq","q":"He ___ (be) embarrassed, but he ___ (apologize) politely.","choices":["was / apologized","was / apologizing","has been / apologized"],"a":0},
+      {"type":"fill","q":"They ____ (repair) the bike quickly and we continued.","a":"repaired"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 6
+  }
+}

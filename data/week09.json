@@ -1,0 +1,119 @@
+﻿{
+  "title": "Week 9 – Unit 9 (Only a Game?): wishes/regrets + should have + over-/under-",
+  "targets": [
+    "Vocabulary: 20–24 كلمة عن الرياضة/المسابقات + البوادئ over-/under-",
+    "Grammar: I wish + Past Simple (تمنٍ حاضر) / I wish + Past Perfect (ندم على الماضي) / should (not) have + V3 (لوم/نصيحة بعدية)",
+    "Grammar: معاني over-/under- (overconfident/overestimate/underestimate/underperform/overuse/underdog)",
+    "Reading: فكرة عامة + تفاصيل + مرجع ضمير/مرادف",
+    "Listening: استماع موجّه لتعليق مدرّب بعد مباراة",
+    "Writing: Match Report + Reflection (6–8 جمل) يدمج أهداف القواعد"
+  ],
+  "vocabulary": [
+    {"w":"match / game","ar":"مباراة/لعبة","ex":"The match was close."},
+    {"w":"tournament","ar":"بطولة","ex":"We joined a local tournament."},
+    {"w":"opponent","ar":"منافس/خصم","ex":"Our opponent was strong."},
+    {"w":"coach","ar":"مدرّب","ex":"The coach encouraged us."},
+    {"w":"referee","ar":"حَكَم","ex":"The referee stopped the game."},
+    {"w":"strategy","ar":"استراتيجية","ex":"We changed our strategy."},
+    {"w":"teamwork","ar":"عمل جماعي","ex":"Teamwork helped us a lot."},
+    {"w":"overconfident","ar":"مفرط الثقة","ex":"They were overconfident at first."},
+    {"w":"underestimate","ar":"يستهين/يقلّل التقدير","ex":"Do not underestimate the opponent."},
+    {"w":"overestimate","ar":"يبالغ في التقدير","ex":"We overestimated our skills."},
+    {"w":"underperform","ar":"يؤدّي بأقل من المتوقع","ex":"The team underperformed in the first half."},
+    {"w":"underdog","ar":"أضعف مرشح/مستضعف","ex":"The underdog won the game."},
+    {"w":"comeback","ar":"عودة قوية بعد تأخر","ex":"They made a great comeback."},
+    {"w":"penalty","ar":"ركلة جزاء/عقوبة","ex":"He missed a penalty."},
+    {"w":"foul","ar":"خطأ","ex":"It was a foul."},
+    {"w":"substitute","ar":"بديل (لاعب)","ex":"The substitute scored a goal."},
+    {"w":"score","ar":"يسجّل/نتيجة","ex":"We scored twice."},
+    {"w":"tie / draw","ar":"تعادل","ex":"The match ended in a draw."},
+    {"w":"fitness","ar":"لياقة","ex":"Fitness matters in long games."},
+    {"w":"sportsmanship","ar":"روح رياضية","ex":"They showed good sportsmanship."},
+    {"w":"fair play","ar":"لعب نزيه","ex":"Fair play is important."},
+    {"w":"cheer","ar":"يهتف/يشجّع","ex":"Fans cheered for the team."}
+  ],
+  "grammar": [
+    {
+      "title": "I wish + Past Simple / Could",
+      "when": "تمنٍّ لحالة حاضرة مختلفة",
+      "form": "I wish I had more time. / I wish we could practise more.",
+      "signals": ["wish about now/today","wish + could"]
+    },
+    {
+      "title": "I wish + Past Perfect",
+      "when": "ندم على الماضي/تمنٍّ أن شيئًا لم يحدث أو حدث بشكل مختلف",
+      "form": "I wish we had passed earlier. / I wish I had trained harder.",
+      "signals": ["yesterday/last match/earlier"]
+    },
+    {
+      "title": "should (not) have + V3",
+      "when": "لوم/نصيحة بعدية عن حدث ماضٍ",
+      "form": "We should have practised more. / He shouldn’t have argued.",
+      "signals": ["in the match/last night/at half-time"]
+    },
+    {
+      "title": "over- / under- prefixes",
+      "when": "معاني: إفراط/أكثر من اللازم (over-) / أقل من اللازم (under-)",
+      "form": "overconfident / overestimate / overuse | underestimate / underperform / underpaid",
+      "signals": ["too much / too little"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"I wish I ___ (have) more time now.","choices":["have","had","have had"],"a":1},
+    {"type":"mcq","q":"I wish we ___ (win) the match yesterday.","choices":["won","had won","have won"],"a":1},
+    {"type":"mcq","q":"They ___ (not/argue); it didn’t help.","choices":["shouldn’t have argued","shouldn’t argue","haven’t argued"],"a":0},
+    {"type":"tf","q":"I wish + Past Perfect يُستخدم لندم على الماضي.","a": true},
+    {"type":"fill","q":"The team ______ (underperform) in the first half.","a":"underperformed"}
+  ],
+  "reading": {
+    "pre": "توقّع: لماذا يخسر فريق قوي مباراة أحيانًا؟ ما دور الثقة الزائدة/الاستهانة؟",
+    "text": "Our school team was overconfident at the start of the final. We scored early, but then we underestimated the opponent. They made a quick comeback and we underperformed in defence. After the match, the coach said we should have passed the ball earlier and stayed calm. I wish we had respected the other team more. Still, we learned an important lesson about teamwork and fair play.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is that the team:","choices":["won easily because they were overconfident","lost and learned from their mistakes","did not finish the match"],"a":1},
+      {"type":"tf","q":"They underestimated the opponent after scoring early.","a": true},
+      {"type":"mcq","q":"The phrase 'we underperformed in defence' means:","choices":["we played better than expected","we played worse than expected","we did not play at all"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u09/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The coach says the team should have passed earlier.","a": true},
+      {"type":"mcq","q":"He wishes they had:","choices":["ignored the opponent","trained more before the match","been more overconfident"],"a":1}
+    ]
+  },
+  "writing": {
+    "prompt": "اكتب تقريرًا 6–8 جمل عن مباراة/مسابقة: اذكر النتيجة بإيجاز، ثم جملة I wish (حاضر أو ماضٍ) وجملة should/shouldn’t have + V3، واستخدم كلمة واحدة على الأقل ببادئة over-/under-.",
+    "tips": [
+      "Use I wish + Past Simple for now: I wish I were/was fitter.",
+      "Use I wish + Past Perfect for past regret: I wish we had passed sooner.",
+      "Use should/shouldn’t have + V3: We should have practised more.",
+      "Add over-/under- word: overconfident / underestimate / underperform."
+    ],
+    "rubric": ["وضوح التقرير","صحة تراكيب wish/should have","استخدام over-/under-","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"I wish I ___ (be) taller for basketball.","choices":["am","were","had been"],"a":1},
+      {"type":"mcq","q":"He ___ (not / waste) time arguing with the referee.","choices":["shouldn’t have wasted","shouldn’t waste","hasn’t wasted"],"a":0},
+      {"type":"tf","q":"I wish + Past Simple يُعبّر عن تمنٍّ لحاضر مختلف.","a": true},
+      {"type":"mcq","q":"We ___ (underestimate) the opponent at the start.","choices":["underestimated","had underestimated","have underestimated"],"a":0},
+      {"type":"fill","q":"I wish we ____ (train) harder last week.","a":"had trained"},
+      {"type":"mcq","q":"'overconfident' means:","choices":["too confident","not confident enough","confident at the right level"],"a":0},
+      {"type":"mcq","q":"They ___ (not / pass) when they had a chance.","choices":["shouldn’t pass","shouldn’t have passed","didn’t have to pass"],"a":1},
+      {"type":"tf","q":"'underperform' = perform better than expected.","a": false},
+      {"type":"mcq","q":"I wish we ___ (win) the final.","choices":["had won","win","have won"],"a":0},
+      {"type":"fill","q":"We ______ (overestimate) our skills before the match.","a":"overestimated"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 10
+  }
+}

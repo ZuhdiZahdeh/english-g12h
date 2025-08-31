@@ -1,0 +1,115 @@
+﻿{
+  "title": "Week 4 – Revision + Reading Plus (U1) + Mini Mock 1",
+  "targets": [
+    "Vocabulary: مراجعة 20–25 كلمة محورية (التغيير/الروتين/الدافعية/إدارة الوقت)",
+    "Grammar: Present Simple/Continuous/Perfect + Perfect vs Past + أفعال to/-ing (stop/remember/try)",
+    "Reading: نص مُلخِّص لأفكار Reading Plus U1 (Making Changes) مع أسئلة",
+    "Listening: مقطع قصير عن عادات الدراسة الفعّالة",
+    "Writing: فقرة قرارات/تغييرات (6–8 جمل) – Perfect + to/-ing",
+    "Mini Mock 1: 10 أسئلة شاملة (V/G/R/L مبسّط)"
+  ],
+  "vocabulary": [
+    {"w":"resolution","ar":"قرار/عزيمة","ex":"My resolution is to study daily."},
+    {"w":"strategy","ar":"استراتيجية","ex":"This strategy is simple."},
+    {"w":"habit","ar":"عادة","ex":"Build a good habit."},
+    {"w":"motivation","ar":"دافعية/تحفيز","ex":"Motivation helps me start."},
+    {"w":"commitment","ar":"التزام","ex":"Show your commitment every week."},
+    {"w":"distraction","ar":"مُشتِّت","ex":"Remove distractions from your desk."},
+    {"w":"focus","ar":"تركيز","ex":"Focus on one small task."},
+    {"w":"schedule","ar":"جدول","ex":"I follow a clear schedule."},
+    {"w":"deadline","ar":"موعد نهائي","ex":"The deadline is tomorrow."},
+    {"w":"progress","ar":"تقدّم","ex":"I have made progress recently."},
+    {"w":"confidence","ar":"ثقة بالنفس","ex":"My confidence has increased."},
+    {"w":"attempt","ar":"محاولة","ex":"Make another attempt."},
+    {"w":"challenge","ar":"تحدٍّ","ex":"This challenge is useful."},
+    {"w":"support","ar":"دعم","ex":"Study with support from a friend."},
+    {"w":"feedback","ar":"تغذية راجعة","ex":"Ask for feedback on your writing."},
+    {"w":"improve","ar":"يُحسّن","ex":"I want to improve my grammar."},
+    {"w":"organize","ar":"يرتّب/ينظّم","ex":"Organize your materials."},
+    {"w":"efficient","ar":"فعّال","ex":"This method is efficient."},
+    {"w":"reminder","ar":"تذكير","ex":"Set a reminder on your phone."},
+    {"w":"join","ar":"ينضمّ","ex":"Join a study group."},
+    {"w":"participate","ar":"يشارك","ex":"Participate in class."},
+    {"w":"apply","ar":"يتقدّم/يطبّق","ex":"Apply the steps every day."},
+    {"w":"goal","ar":"هدف","ex":"My goal is to pass the exam."},
+    {"w":"step-by-step","ar":"خطوة بخطوة","ex":"Learn step-by-step."}
+  ],
+  "grammar": [
+    {
+      "title": "Present Simple vs Continuous",
+      "when": "روتين/حقائق مقابل شيء جارٍ الآن",
+      "form": "He studies every day. / He is studying now.",
+      "signals": ["always","usually","every day","now","these days"]
+    },
+    {
+      "title": "Present Perfect vs Past Simple",
+      "when": "نتيجة/خبر حالي vs وقت محدد بالماضي",
+      "form": "have/has + V3  vs  V2",
+      "signals": ["already/just/yet/recently vs yesterday/last week/in 2023"]
+    },
+    {
+      "title": "Verb Patterns: to + V / V-ing",
+      "when": "نوايا/خطط (to + V) مقابل أنشطة/تجارب (V-ing)",
+      "form": "want/need/plan/decide + to + V | enjoy/avoid/finish/keep + V-ing",
+      "signals": ["stop/remember/try (فرق المعنى بين to و -ing)"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"She ___ (study) now.","choices":["studies","is studying","has studied"],"a":1},
+    {"type":"mcq","q":"I ___ (just / finish) my homework.","choices":["just finish","have just finished","am just finishing"],"a":1},
+    {"type":"mcq","q":"We ___ (join) the club last week.","choices":["have joined","joined","have just joined"],"a":1},
+    {"type":"tf","q":"'these days' → Present Continuous.", "a": true},
+    {"type":"fill","q":"Try ____ (use) a checklist every day.", "a":"using"}
+  ],
+  "reading": {
+    "pre": "توقّع: ما أهم خطوة تجعل قراراتك الدراسية تعمل فعلاً؟",
+    "text": "Many students make big plans but stop after a few weeks. A better way is to set clear goals, enjoy small wins, and share progress with a friend. Think about possible problems and prepare a simple plan. Take one step at a time. This approach builds confidence and leads to real change.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is to:","choices":["make very big plans only","use small steps and clear goals","study without any plan"],"a":1},
+      {"type":"tf","q":"Sharing progress with a friend can help motivation.", "a": true},
+      {"type":"mcq","q":"'This approach' refers to:","choices":["big plans","one-step method with clear goals","no planning"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u04/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker recommends small daily actions.", "a": true},
+      {"type":"mcq","q":"He suggests removing:","choices":["books","distractions like the phone","breaks"],"a":1}
+    ]
+  },
+  "writing": {
+    "prompt": "اكتب فقرة 6–8 جمل عن تغيير دراسي تبنّيته: (1) Present Perfect لنتيجة حديثة، (2) جملة to + V لخطوة يومية، (3) مثال V-ing لنشاط مفضّل.",
+    "tips": [
+      "Use Present Perfect for recent results: I have improved my reading.",
+      "Use Past Simple for finished time: I joined a club last week.",
+      "Keep sentences short. Check -s / -ed / -ing."
+    ],
+    "rubric": ["وضوح الفكرة","ترابط بسيط","دقة الأزمنة/الأنماط","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"'these days' we ___ (read) short texts.","choices":["read","are reading","have read"],"a":1},
+      {"type":"mcq","q":"I ___ (already / finish) my draft.","choices":["already finish","have already finished","am already finishing"],"a":1},
+      {"type":"tf","q":"'last year' → Past Simple.", "a": true},
+      {"type":"mcq","q":"We decided ___ (start) early.","choices":["to start","starting","to starting"],"a":0},
+      {"type":"fill","q":"He stopped ____ (check) messages while studying.", "a":"checking"},
+      {"type":"mcq","q":"She ___ (join) the English club in 2023.","choices":["has joined","joined","has just joined"],"a":1},
+      {"type":"mcq","q":"They enjoy ___ (work) in pairs.","choices":["to work","working","to working"],"a":1},
+      {"type":"tf","q":"'for two months' fits Present Perfect.", "a": true},
+      {"type":"mcq","q":"I ___ (not / finish) yet.","choices":["do not finish","have not finished","am not finishing"],"a":1},
+      {"type":"fill","q":"We ____ (make) good progress recently.", "a":"have made"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 5
+  }
+}
+

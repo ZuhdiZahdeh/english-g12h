@@ -1,0 +1,35 @@
+﻿{
+  "title": "Mock 2 – Extended (20Q) after Unit 8",
+  "instructions": "يشمل مفردات الأعمال والدراسة + قواعد حتى Unit 8 (modals of possibility, future forms, -ed/-ing adjectives, reduced relatives, question tags, indirect questions, reported orders/advice, causative have/get, in/on + noun).",
+  "reading": {
+    "title": "An Internship that Changed a Plan",
+    "text": "Lina joined a small startup as an intern for six weeks. At first, she planned to learn basic design only, but the manager encouraged her to try new tasks. She was in charge of updating the website and collecting customer feedback. The team might launch a new product next term, so Lina created a short survey and analyzed the results. By the end of the internship, she had learned to prioritize tasks, write clear emails, and present data to the team. These small achievements made her more confident and changed her career plan."
+  },
+  "exam": {
+    "passMark": 14,
+    "items": [
+      { "type": "mcq", "q": "Reading: The main idea is that the internship:", "choices": ["was a waste of time", "helped Lina gain skills and change plans", "was only about design"], "a": 1 },
+      { "type": "tf",  "q": "Reading: Lina planned to learn only design at first.", "a": true },
+      { "type": "mcq", "q": "Reading: 'in charge of' is closest to:", "choices": ["responsible for", "afraid of", "confused about"], "a": 0 },
+      { "type": "mcq", "q": "Reading: 'These small achievements' refers to:", "choices": ["the survey questions", "skills and results she gained", "the manager's advice"], "a": 1 },
+      { "type": "mcq", "q": "Reading: The team ___ launch a product next term.", "choices": ["must", "might", "can't"], "a": 1 },
+
+      { "type": "mcq", "q": "Vocab: 'revenue' means:", "choices": ["إيرادات", "مخزون", "خصم"], "a": 0 },
+      { "type": "mcq", "q": "Vocab: Choose the correct collocation:", "choices": ["do a decision", "make a decision", "make an advise"], "a": 1 },
+      { "type": "tf",  "q": "Vocab: 'customer feedback' = ملاحظات العملاء.", "a": true },
+      { "type": "mcq", "q": "Vocab: We put the old phones ___ sale.", "choices": ["in", "on", "at"], "a": 1 },
+      { "type": "fill","q": "Vocab: He is ___ charge of marketing. (اكتب كلمة واحدة)", "a": "in" },
+
+      { "type": "mcq", "q": "Grammar: It ___ rain this evening, so take an umbrella. (possibility)", "choices": ["will", "might", "mustn't"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: We ___ (meet) the client at 10; it's already on the calendar. (arrangement)", "choices": ["will meet", "are meeting", "are going to meet"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: I'm sure they ___ (love) the new design. (prediction/opinion)", "choices": ["will love", "are loving", "are going to love (certain plan)"], "a": 0 },
+      { "type": "mcq", "q": "Grammar: Reduced relative — Choose the best form: 'Students ___ the course must submit a form.'", "choices": ["who join", "joining", "to join"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: -ed/-ing adjectives — The workshop was ___ (interest).", "choices": ["interested", "interesting", "interest"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: Question tag — 'You finished the report, ___?'", "choices": ["did you", "didn't you", "don't you"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: Indirect question — 'Could you tell me where the office ___?'", "choices": ["is", "is?", "was?"], "a": 0 },
+      { "type": "mcq", "q": "Grammar: Reported order/advice — 'The manager told us ___ (be) on time.'", "choices": ["be", "to be", "being"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: Causative — 'We ___ our website updated last month.'", "choices": ["had", "let", "made"], "a": 0 },
+      { "type": "mcq", "q": "Grammar: Prepositions — 'The company is ___ business again.'", "choices": ["in", "on", "at"], "a": 0 }
+    ]
+  }
+}

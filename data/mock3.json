@@ -1,0 +1,35 @@
+﻿{
+  "title": "Mock 3 – Final (20Q)",
+  "instructions": "يشمل تغطية شاملة حتى Unit 12: Reading + Vocabulary + Grammar (tenses, modals of deduction/advice, passive, reported speech, conditionals 0/1/2, linkers, comparatives/superlatives, question tags, indirect questions, relatives/reduced, causative, in/on + noun, -ed/-ing adjectives).",
+  "reading": {
+    "title": "The Final Push",
+    "text": "Two weeks before their final English exam, a group of students reviewed their plan. At first, they spent hours rereading notes and arguing over answers, but it was not effective. They switched to a simple routine: set a 25-minute timer, focus on one skill, then take a short break. Each evening they shadowed one listening track, summarized a short reading in four sentences, and wrote a 6–8 sentence paragraph. They also tracked errors in a shared log and adjusted the plan when needed. After ten days, their confidence improved and their practice scores increased steadily."
+  },
+  "exam": {
+    "passMark": 14,
+    "items": [
+      { "type": "mcq", "q": "Reading: The main idea is that the students:", "choices": ["kept the same method and succeeded", "used a simple routine that improved results", "stopped studying completely"], "a": 1 },
+      { "type": "tf",  "q": "Reading: Their first method was effective.", "a": false },
+      { "type": "mcq", "q": "Reading: The pronoun 'it' in 'it was not effective' refers to:", "choices": ["the new routine", "the old method", "the final exam"], "a": 1 },
+      { "type": "mcq", "q": "Reading: 'shadowed one listening track' means:", "choices": ["memorized every word", "listened and spoke along with the audio", "wrote a dictation only"], "a": 1 },
+      { "type": "mcq", "q": "Reading: 'adjusted the plan' is closest to:", "choices": ["canceled the plan", "changed the plan when needed", "ignored the plan"], "a": 1 },
+      { "type": "mcq", "q": "Reading: Which habit most directly improves writing?", "choices": ["taking short breaks", "summarizing a reading", "writing a 6–8 sentence paragraph each evening"], "a": 2 },
+
+      { "type": "mcq", "q": "Vocab: Choose the correct collocation:", "choices": ["do progress", "make steady progress", "make a progress"], "a": 1 },
+      { "type": "mcq", "q": "Vocab: 'coherent' is closest to:", "choices": ["loud", "logical and clear", "very fast"], "a": 1 },
+      { "type": "fill","q": "Vocab: We ____ (allocate) 30 minutes to listening each day.", "a": "allocated" },
+      { "type": "mcq", "q": "Vocab: We finished the draft ___ schedule.", "choices": ["in", "on", "ahead of"], "a": 2 },
+      { "type": "tf",  "q": "Vocab: 'deadline' = the last acceptable time to submit.", "a": true },
+      { "type": "mcq", "q": "Vocab: Choose the best phrase:", "choices": ["take notes while listening", "do notes while listening", "make a notes while listening"], "a": 0 },
+
+      { "type": "mcq", "q": "Grammar: She ___ (just / finish) the summary.", "choices": ["just finish", "has just finished", "is just finishing"], "a": 1 },
+      { "type": "mcq", "q": "Grammar (modals of deduction): The lights are off; he ___ be at home.", "choices": ["must", "might", "can't"], "a": 2 },
+      { "type": "mcq", "q": "Grammar (passive): The website ___ (update) yesterday.", "choices": ["was updated", "updated", "has updating"], "a": 0 },
+      { "type": "mcq", "q": "Grammar (reported): The teacher said, \"Review your notes.\" → The teacher ___ us ___ review our notes.", "choices": ["told / to", "asked / that we", "said / to"], "a": 0 },
+      { "type": "mcq", "q": "Grammar (Type 2 conditional): If I ___ (have) more time, I ___ (practise) speaking more.", "choices": ["had / would practise", "have / will practise", "had / practised"], "a": 0 },
+      { "type": "mcq", "q": "Grammar (question tag): You did the mock, ___?", "choices": ["did you", "didn't you", "don't you"], "a": 1 },
+      { "type": "mcq", "q": "Grammar (causative): We ___ our essays checked by a teacher.", "choices": ["had", "made", "let"], "a": 0 },
+      { "type": "mcq", "q": "Grammar (comparative): This method is ___ than the old one.", "choices": ["efficienter", "more efficient", "most efficient"], "a": 1 }
+    ]
+  }
+}

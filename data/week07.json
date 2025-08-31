@@ -1,0 +1,113 @@
+﻿{
+  "title": "Week 7 – Unit 5 (Making Friends): -ed/-ing adjectives + Reduced Relatives + Phrasal Verbs (on/out)",
+  "targets": [
+    "Vocabulary: 20–24 كلمة عن الصفات والعلاقات والصداقات + أفعال مركّبة on/out",
+    "Grammar: الفرق بين -ed/-ing adjectives | قواعد Reduced Relatives | مجموعة phrasal verbs on/out",
+    "Reading: فكرة عامة + تفاصيل + مرجع ضمير/مرادف",
+    "Listening: نصيحة لطالب جديد حول تكوين صداقات",
+    "Writing: فقرة وصف صديق/زميل (6–8 جمل) تدمج هدف القواعد"
+  ],
+  "vocabulary": [
+    {"w":"friendly","ar":"ودود","ex":"He is friendly to new students."},
+    {"w":"shy","ar":"خجول","ex":"She is shy at first."},
+    {"w":"outgoing","ar":"منفتح اجتماعيًا","ex":"My cousin is outgoing and helpful."},
+    {"w":"polite","ar":"مهذّب","ex":"Please be polite when you speak."},
+    {"w":"honest","ar":"صادق","ex":"An honest friend tells the truth."},
+    {"w":"loyal","ar":"وفيّ","ex":"A loyal friend stands by you."},
+    {"w":"reliable","ar":"يمكن الاعتماد عليه","ex":"He is reliable and always on time."},
+    {"w":"generous","ar":"كريم","ex":"She is generous with her time."},
+    {"w":"patient","ar":"صبور","ex":"Be patient with shy classmates."},
+    {"w":"talkative","ar":"ثرثار","ex":"He is talkative but friendly."},
+    {"w":"sense of humor","ar":"روح الدعابة","ex":"She has a good sense of humor."},
+    {"w":"respect (n./v.)","ar":"احترام/يحترم","ex":"We respect each other."},
+    {"w":"trust (n./v.)","ar":"ثقة/يثق","ex":"I trust my best friend."},
+    {"w":"advice","ar":"نصيحة","ex":"Can you give me advice?"},
+    {"w":"argument","ar":"مشادّة/خلاف","ex":"They had a small argument."},
+    {"w":"apologize","ar":"يعتذر","ex":"He apologized after the mistake."},
+    {"w":"get along (with)","ar":"ينسجم مع","ex":"We get along with our classmates."},
+    {"w":"hang out","ar":"يمضي الوقت (معًا)","ex":"We hang out after school."},
+    {"w":"reach out (to)","ar":"يتواصل/يمدّ يد العون","ex":"Reach out to new students."},
+    {"w":"find out","ar":"يكتشف/يعرف","ex":"Find out their interests."},
+    {"w":"carry on","ar":"يواصل","ex":"Carry on the conversation politely."},
+    {"w":"point out","ar":"يشير إلى/يلفت النظر","ex":"He pointed out a mistake kindly."},
+    {"w":"sort out","ar":"يحلّ/يرتّب","ex":"They sorted out the problem."}
+  ],
+  "grammar": [
+    {
+      "title": "-ed / -ing adjectives",
+      "when": "-ed لوصف الشعور (الشخص): I am bored. | -ing لوصف الشيء/الموقف: The film is boring.",
+      "form": "interested/interesting, excited/exciting, embarrassed/embarrassing, tired/tiring",
+      "signals": ["I feel … (-ed)","It is … (-ing)"]
+    },
+    {
+      "title": "Reduced Relatives (تقليص جمل الوصل)",
+      "when": "يمكن تقليص 'who/that + be' مع صفة/اسم فاعل/اسم مفعول: Students who are interested → Students interested",
+      "form": "active: who + V-ing → V-ing | passive: who/that + be + V3 → V3",
+      "signals": ["people interested in…","tasks done last week"]
+    },
+    {
+      "title": "Phrasal Verbs (on/out)",
+      "when": "on: carry on, rely on, get on (with), go on | out: find out, point out, hang out, reach out, try out, sort out",
+      "form": "verb + particle",
+      "signals": ["carry on = continue","find out = discover","hang out = spend time"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"I am ___ (interest) in joining the club.","choices":["interested","interesting","interest"],"a":0},
+    {"type":"mcq","q":"Choose the reduced form: 'Students who are interested in volunteering' →","choices":["Students who interested in volunteering","Students interested in volunteering","Students who are volunteers"],"a":1},
+    {"type":"mcq","q":"We will ___ (continue) after the break.","choices":["find out","carry on","hang out"],"a":1},
+    {"type":"tf","q":"-ed يصف الشعور و -ing يصف الشيء/الموقف.","a": true},
+    {"type":"fill","q":"She ___ (reach) out to welcome the new classmate.","a":"reached out"}
+  ],
+  "reading": {
+    "pre": "توقّع: ما أهم صفة لتكوين صداقة سريعة في بداية السنة؟",
+    "text": "At the start of the term, many students want to make friends, but some feel shy or nervous. A simple way is to reach out with a small smile and a short question like, 'What do you enjoy?' Clubs help too: students interested in sports or reading can meet like-minded classmates. It is also important to listen politely and point out positive things. After a few days, most students feel more relaxed, and they get along better during group work.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is:","choices":["Making friends requires big events.","Small friendly actions help students connect.","Only clubs can create friendships."],"a":1},
+      {"type":"tf","q":"The text says listening politely is important.","a": true},
+      {"type":"mcq","q":"The phrase 'students interested in sports' is an example of:","choices":["-ed adjective of feeling","reduced relative clause","future form"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u07/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker advises new students to reach out and introduce themselves.","a": true},
+      {"type":"mcq","q":"He suggests to ___ after class.","choices":["hang out in small groups","find out the exam answers","carry on studying without breaks"],"a":0}
+    ]
+  },
+  "writing": {
+    "prompt": "اكتب فقرة 6–8 جمل تصف صديقًا/زميلًا: استخدم صفة -ed/-ing واحدة على الأقل، وجملة Reduced Relative واحدة، وفعلًا مركّبًا on/out.",
+    "tips": [
+      "Use -ed for how people feel: He was embarrassed.",
+      "Use -ing for things/situations: The joke was embarrassing.",
+      "Reduced relative (active): 'a friend helping me' | (passive): 'tasks done yesterday'.",
+      "Use a phrasal verb: We hang out after class / I found out his hobby."
+    ],
+    "rubric": ["وصف واضح","دقة -ed/-ing","Reduced relative صحيحة","فعل مركّب صحيح","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"The film was so ___ that we fell asleep.","choices":["boring","bored","embarrassed"],"a":0},
+      {"type":"mcq","q":"Choose the reduced relative: 'The students who are excited' →","choices":["The students excited","The students who excited","The excited students"],"a":2},
+      {"type":"mcq","q":"We decided to ___ (discover) more about the club.","choices":["hang out","find out","carry on"],"a":1},
+      {"type":"tf","q":"'carry on' = stop.","a": false},
+      {"type":"fill","q":"They ___ (sort) out the argument quickly.","a":"sorted out"},
+      {"type":"mcq","q":"He is a friend I can ___ (depend) ___ .","choices":["rely / in","rely / on","depend / on to"],"a":1},
+      {"type":"mcq","q":"Choose the best option: 'A friend ___ helps me is loyal.'","choices":["who","which","whose"],"a":0},
+      {"type":"mcq","q":"'Students ___ in reading joined the club.'","choices":["interested","interesting","interest"],"a":0},
+      {"type":"tf","q":"'hang out' means spend time together for fun.","a": true},
+      {"type":"fill","q":"She felt ___ (embarrass) when she forgot the name.","a":"embarrassed"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 8
+  }
+}

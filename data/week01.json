@@ -1,0 +1,300 @@
+﻿{
+    "title":  "Week 1 – Revision (Present Tenses) + Unit 1 Intro",
+    "targets":  [
+                    "Vocabulary: 25–30 كلمة أساسية مرتبطة بـ comfort zone / routine / change",
+                    "Grammar: Present Simple vs Continuous vs Perfect (meaning now)",
+                    "Reading: فكرة عامة + تفاصيل + مرجع الضمائر",
+                    "Listening: استماع موجّه (3 جولات)",
+                    "Writing: Personal Statement – مقدمة (3–4 جمل) ثم فقرة 6–8 جمل"
+                ],
+    "vocabulary":  [
+                       {
+                           "w":  "comfort zone",
+                           "ar":  "منطقة الراحة",
+                           "ex":  "I learn better outside my comfort zone."
+                       },
+                       {
+                           "w":  "routine",
+                           "ar":  "روتين",
+                           "ex":  "My routine is simple and clear."
+                       },
+                       {
+                           "w":  "confident",
+                           "ar":  "واثق",
+                           "ex":  "I feel confident after practice."
+                       },
+                       {
+                           "w":  "stuck",
+                           "ar":  "عالق",
+                           "ex":  "He felt stuck, but he tried again."
+                       },
+                       {
+                           "w":  "improve",
+                           "ar":  "يُحسّن",
+                           "ex":  "I want to improve my English."
+                       },
+                       {
+                           "w":  "attempt",
+                           "ar":  "محاولة",
+                           "ex":  "Make another attempt and don’t give up."
+                       },
+                       {
+                           "w":  "participate",
+                           "ar":  "يشارك",
+                           "ex":  "Participate in class activities."
+                       },
+                       {
+                           "w":  "optional",
+                           "ar":  "اختياري",
+                           "ex":  "This task is not optional."
+                       },
+                       {
+                           "w":  "potential",
+                           "ar":  "إمكانات",
+                           "ex":  "You have great potential."
+                       },
+                       {
+                           "w":  "progress",
+                           "ar":  "تقدّم",
+                           "ex":  "Small progress every day matters."
+                       }
+                   ],
+    "grammar":  [
+                    {
+                        "title":  "Present Simple",
+                        "when":  "حقائق/روتين/مواعيد",
+                        "form":  "I/You/We/They + V | He/She/It + V+s",
+                        "signals":  [
+                                        "always",
+                                        "usually",
+                                        "every day",
+                                        "often"
+                                    ]
+                    },
+                    {
+                        "title":  "Present Continuous",
+                        "when":  "شيء جارٍ الآن/مؤقت",
+                        "form":  "am/is/are + V-ing",
+                        "signals":  [
+                                        "now",
+                                        "at the moment",
+                                        "these days"
+                                    ]
+                    },
+                    {
+                        "title":  "Present Perfect (meaning now)",
+                        "when":  "خبر/خبرة تؤثر الآن",
+                        "form":  "have/has + V3",
+                        "signals":  [
+                                        "already",
+                                        "just",
+                                        "yet",
+                                        "ever",
+                                        "never",
+                                        "recently"
+                                    ]
+                    }
+                ],
+    "grammarPractice":  [
+                            {
+                                "type":  "mcq",
+                                "q":  "He ___ (study) English every day.",
+                                "choices":  [
+                                                "studies",
+                                                "is studying",
+                                                "has studied"
+                                            ],
+                                "a":  0
+                            },
+                            {
+                                "type":  "mcq",
+                                "q":  "I ___ (read) now.",
+                                "choices":  [
+                                                "read",
+                                                "am reading",
+                                                "have read"
+                                            ],
+                                "a":  1
+                            },
+                            {
+                                "type":  "mcq",
+                                "q":  "She ___ (just / join) the club.",
+                                "choices":  [
+                                                "joins",
+                                                "is joining",
+                                                "has just joined"
+                                            ],
+                                "a":  2
+                            },
+                            {
+                                "type":  "tf",
+                                "q":  "Signal \u0027now\u0027 → Present Simple.",
+                                "a":  false
+                            },
+                            {
+                                "type":  "fill",
+                                "q":  "They ____ (already/finish) their homework.",
+                                "a":  "have already finished"
+                            }
+                        ],
+    "reading":  {
+                    "pre":  "توقّع: لماذا يخاف بعض الطلاب من الخروج من منطقة الراحة؟ اكتب فكرة واحدة.",
+                    "text":  "Many students feel safe in their comfort zone. They follow a routine and avoid new tasks. However, small changes can help them improve. For example, speaking for 30 seconds in class every day builds confidence. After a few weeks, they notice progress and feel proud.",
+                    "tasks":  [
+                                  {
+                                      "type":  "mcq",
+                                      "q":  "The main idea is:",
+                                      "choices":  [
+                                                      "Change is dangerous.",
+                                                      "Small steps help you improve.",
+                                                      "Routine is the best way."
+                                                  ],
+                                      "a":  1
+                                  },
+                                  {
+                                      "type":  "tf",
+                                      "q":  "The text recommends speaking for 30 minutes every day.",
+                                      "a":  false
+                                  },
+                                  {
+                                      "type":  "mcq",
+                                      "q":  "The word \u0027they\u0027 in line 2 refers to:",
+                                      "choices":  [
+                                                      "teachers",
+                                                      "students",
+                                                      "parents"
+                                                  ],
+                                      "a":  1
+                                  }
+                              ]
+                },
+    "listening":  {
+                      "src":  "../audio/u01/track1.mp3",
+                      "tasks":  [
+                                    {
+                                        "type":  "tf",
+                                        "q":  "The speaker suggests small daily goals.",
+                                        "a":  true
+                                    },
+                                    {
+                                        "type":  "mcq",
+                                        "q":  "He speaks mainly about:",
+                                        "choices":  [
+                                                        "exams",
+                                                        "confidence",
+                                                        "vocabulary only"
+                                                    ],
+                                        "a":  1
+                                    }
+                                ]
+                  },
+    "writing":  {
+                    "prompt":  "Personal Statement – مقدمة (3–4 جمل): عرّف بنفسك، هدفك في الإنجليزية هذا الفصل، وخطوة صغيرة يومية.",
+                    "tips":  [
+                                 "Use present tenses.",
+                                 "Keep sentences short.",
+                                 "Check spelling."
+                             ],
+                    "rubric":  [
+                                   "وضوح الفكرة",
+                                   "ترابط بسيط",
+                                   "قواعد زمن الحاضر",
+                                   "إملاء أساسي"
+                               ]
+                },
+    "exam":  {
+                 "passMark":  7,
+                 "items":  [
+                               {
+                                   "type":  "mcq",
+                                   "q":  "I usually ___ (walk) to school.",
+                                   "choices":  [
+                                                   "walk",
+                                                   "am walking",
+                                                   "have walked"
+                                               ],
+                                   "a":  0
+                               },
+                               {
+                                   "type":  "mcq",
+                                   "q":  "She ___ (just / start) a new course.",
+                                   "choices":  [
+                                                   "just starts",
+                                                   "is just starting",
+                                                   "has just started"
+                                               ],
+                                   "a":  2
+                               },
+                               {
+                                   "type":  "tf",
+                                   "q":  "\u0027these days\u0027 → Present Continuous.",
+                                   "a":  true
+                               },
+                               {
+                                   "type":  "mcq",
+                                   "q":  "They ___ (study) now.",
+                                   "choices":  [
+                                                   "study",
+                                                   "are studying",
+                                                   "have studied"
+                                               ],
+                                   "a":  1
+                               },
+                               {
+                                   "type":  "fill",
+                                   "q":  "He ____ (never/try) this exercise.",
+                                   "a":  "has never tried"
+                               },
+                               {
+                                   "type":  "mcq",
+                                   "q":  "We ___ (meet) every Monday.",
+                                   "choices":  [
+                                                   "meet",
+                                                   "are meeting",
+                                                   "have met"
+                                               ],
+                                   "a":  0
+                               },
+                               {
+                                   "type":  "tf",
+                                   "q":  "\u0027already\u0027 is common with Present Perfect.",
+                                   "a":  true
+                               },
+                               {
+                                   "type":  "mcq",
+                                   "q":  "I ___ (not / finish) yet.",
+                                   "choices":  [
+                                                   "do not finish",
+                                                   "am not finishing",
+                                                   "have not finished"
+                                               ],
+                                   "a":  2
+                               },
+                               {
+                                   "type":  "mcq",
+                                   "q":  "She ___ (be) confident now.",
+                                   "choices":  [
+                                                   "is",
+                                                   "was",
+                                                   "has been"
+                                               ],
+                                   "a":  0
+                               },
+                               {
+                                   "type":  "fill",
+                                   "q":  "They ____ (make) good progress recently.",
+                                   "a":  "have made"
+                               }
+                           ]
+             },
+    "unlock":  {
+                   "requirements":  [
+                                        "listeningDone",
+                                        "readingScore\u003e=2",
+                                        "grammarScore\u003e=3",
+                                        "writingSubmitted",
+                                        "examScore\u003e=7"
+                                    ],
+                   "nextWeek":  2
+               }
+}

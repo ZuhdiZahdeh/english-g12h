@@ -1,0 +1,105 @@
+﻿{
+  "title": "Week 6 – Unit 4 (The Shrinking World): Possibility + Future Forms",
+  "targets": [
+    "Vocabulary: 20–24 كلمة عن الاتصالات/التقنية/التخطيط",
+    "Grammar: may/might/could (possibility) + will / be going to / Present Continuous (arrangements)",
+    "Reading: فكرة عامة + تفاصيل + مرجع ضمير/مرادف",
+    "Listening: استماع موجّه عن ترتيب اجتماع عبر الإنترنت",
+    "Writing: Questionnaire → Mini-Report (6–8 جمل: نتائج + خطة)"
+  ],
+  "vocabulary": [
+    {"w":"communicate","ar":"يتواصل","ex":"We communicate online every day."},
+    {"w":"communication","ar":"تواصل","ex":"Good communication builds trust."},
+    {"w":"connection","ar":"اتصال/رابط","ex":"The internet connection is slow."},
+    {"w":"network","ar":"شبكة","ex":"The school network is stable."},
+    {"w":"device","ar":"جهاز","ex":"This device is easy to use."},
+    {"w":"signal","ar":"إشارة","ex":"The signal is weak here."},
+    {"w":"coverage","ar":"تغطية","ex":"There is no coverage in the basement."},
+    {"w":"access","ar":"وصول/نفاذ","ex":"Do you have access to the platform?"},
+    {"w":"upload","ar":"يرفع (ملفات)","ex":"Please upload your report."},
+    {"w":"download","ar":"ينزّل (ملفات)","ex":"Download the audio file."},
+    {"w":"platform","ar":"منصّة","ex":"We use a learning platform."},
+    {"w":"app (application)","ar":"تطبيق","ex":"This app is popular."},
+    {"w":"account","ar":"حساب","ex":"Create an account first."},
+    {"w":"privacy","ar":"خصوصية","ex":"Privacy is important online."},
+    {"w":"share","ar":"يشارك","ex":"Share the file with your group."},
+    {"w":"contact","ar":"جهة اتصال/يتواصل","ex":"Contact your teacher by email."},
+    {"w":"schedule","ar":"جدول/موعد","ex":"Check the meeting schedule."},
+    {"w":"arrange","ar":"يرتّب","ex":"Let’s arrange a video meeting."},
+    {"w":"prediction","ar":"توقّع","ex":"My prediction is that we will finish early."},
+    {"w":"evidence","ar":"دليل","ex":"Dark clouds are evidence it is going to rain."},
+    {"w":"possibility","ar":"إمكانية","ex":"It might be delayed."},
+    {"w":"probably","ar":"على الأرجح","ex":"We will probably meet at 6."}
+  ],
+  "grammar": [
+    {
+      "title": "Modals of Possibility (may / might / could)",
+      "when": "للتعبير عن احتمال (منخفض/متوسط)",
+      "form": "may/might/could + base verb",
+      "signals": ["maybe","perhaps","possibly","not sure"]
+    },
+    {
+      "title": "Future Forms: will / be going to / Present Continuous",
+      "when": "will: قرار لحظي/رأي عام؛ be going to: نِيّة/خطة أو تنبّؤ بدليل؛ Present Continuous: ترتيب مؤكد (موعد)، وقت/مكان محدّد",
+      "form": "will + V | am/is/are going to + V | am/is/are + V-ing (مع وقت/مكان)",
+      "signals": ["I think... (will)","Look! (going to)","We are meeting at 6 (arrangement)"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"It ___ rain this evening. (possibility)","choices":["will","might","mustn't"],"a":1},
+    {"type":"mcq","q":"We ___ (meet) the engineer at 10; it's on the calendar.","choices":["will meet","are meeting","are going to meet"],"a":1},
+    {"type":"mcq","q":"Look at those dark clouds — it ___ rain soon.","choices":["will","is going to","might not"],"a":1},
+    {"type":"tf","q":"We use 'will' for fixed arrangements with time/place.","a": false},
+    {"type":"fill","q":"I ____ (probably/call) you later.","a":"will probably call"}
+  ],
+  "reading": {
+    "pre": "توقّع: كيف تجعل التطبيقات الحديثة العالم يبدو “أصغر”؟ وما المخاطر إن أفرطنا في استخدامها؟",
+    "text": "With fast communication, the world feels smaller. Students can share messages, files, and ideas across cities in seconds. Clubs arrange online meetings, and teachers announce changes quickly. However, privacy and focus still matter: not every message needs an instant reply. Small rules—like turning off notifications while studying—help students stay calm and productive.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is:","choices":["Communication makes distance bigger.","Fast tools connect people, but we must use them wisely.","Messages always need instant replies."],"a":1},
+      {"type":"tf","q":"The text says clubs can arrange online meetings.","a": true},
+      {"type":"mcq","q":"The pronoun 'them' in 'use them wisely' refers to:","choices":["students","messages","communication tools"],"a":2}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u06/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker suggests arranging a video meeting with a clear time.","a": true},
+      {"type":"mcq","q":"He recommends choosing:","choices":["a random time","a time that suits all time zones","no schedule"],"a":1}
+    ]
+  },
+  "writing": {
+    "prompt": "Questionnaire → Mini-Report (6–8 جمل): (1) فكرة الاستبيان، (2) نتيجتان رئيسيتان (may/might/could عند الحاجة)، (3) خطة بسيطة للأسبوع القادم مع ترتيب واضح (We are meeting on … / We are going to … / We will probably …).",
+    "tips": [
+      "Use Present Continuous for fixed arrangements: We are meeting on Tuesday at 6.",
+      "Use be going to for plans/intentions: We are going to create a study group.",
+      "Use may/might/could for possibility: We might use the school platform."
+    ],
+    "rubric": ["وضوح النتائج","دقّة الصيغ المستقبلية","استخدام مناسب لـ may/might/could","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"I think they ___ (finish) the task tomorrow.","choices":["are going to finish (evidence)","will finish","are finishing"],"a":1},
+      {"type":"mcq","q":"We ___ (have) a meeting at 5; it's already in the diary.","choices":["will have","are having","are going to have"],"a":2},
+      {"type":"tf","q":"'might' expresses possibility.","a": true},
+      {"type":"mcq","q":"Look at the schedule — they ___ (present) at 4.","choices":["will present","are presenting","might present"],"a":2},
+      {"type":"fill","q":"It ____ (could / be) delayed if the connection is weak.","a":"could be"},
+      {"type":"mcq","q":"He thinks it ___ be easy.","choices":["will","might","is going to (arrangement)"],"a":1},
+      {"type":"mcq","q":"We ___ (meet) the new teacher now. It’s a fixed plan.","choices":["are meeting","will meet","might meet"],"a":0},
+      {"type":"tf","q":"'be going to' can show a plan/intention.","a": true},
+      {"type":"mcq","q":"The clouds are very dark; it ___ rain.","choices":["will (decision now)","is going to","was going to"],"a":2},
+      {"type":"fill","q":"I ____ (send) the file later. (probably)","a":"will probably send"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 7
+  }
+}

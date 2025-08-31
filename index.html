@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>English for Palestine 12 – خطة علاجية أسبوعية</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="container">
+  <h1>منصّة English for Palestine – توجيهي (خطة علاجية)</h1>
+  <p class="sub">ابدأ بالأسبوع 1، وأكمِل المتطلبات (استماع/قراءة/قواعد/كتابة/اختبار) لفتح الأسبوع التالي.</p>
+
+  <label class="admin-toggle" style="display:inline-flex;gap:.5rem;align-items:center;">
+    <input type="checkbox" id="adminMode" />
+    <span>وضع المعلّم (فتح جميع الأسابيع وإظهار المفاتيح بعد التسليم)</span>
+  </label>
+</header>
+
+<main class="container">
+  <section id="weeksGrid" class="weeks-grid"></section>
+
+  <section class="legend" style="margin-top:.5rem;">
+    <span class="badge locked">مغلق</span>
+    <span class="badge open">مفتوح</span>
+    <span class="badge done">منجَز</span>
+  </section>
+
+  <section class="export" style="margin-top:.5rem;">
+    <button id="exportProgress">تصدير تقدّم الطالب (JSON)</button>
+    <button id="resetProgress" class="danger">إعادة ضبط كلّ التقدّم</button>
+  </section>
+</main>
+
+<footer class="container small">
+  <p>روتين يومي مُقترح: 10 كلمات جديدة + 20 مراجعة (1/3/7/14) + ظلّ الصوت 5 جُمل.</p>
+</footer>
+
+<!-- تحميل التطبيق كـ ES Module -->
+
+<section class="card" style="margin-top:.75rem">
+  <h3>اختبارات تجريبية (Mocks)</h3>
+  <p class="muted">جرّب نفسك قبل المتابعة.</p>
+  <p><a class="back" href="mocks/mock1.html">🔗 Mock 1 – Extended (20Q)</a></p>
+  <p><a class="back" href="mocks/mock2.html">🔗 Mock 2 – Extended (20Q)</a></p>
+  <p><a class="back" href="mocks/mock3.html">🔗 Mock 3 – Final (20Q)</a></p>
+</section>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿{
+  "title": "Week 3 – Unit 2 (Under Pressure: Time Management + to/-ing)",
+  "targets": [
+    "Vocabulary: 20–25 كلمة عن إدارة الوقت والضغط الدراسي",
+    "Grammar: أفعال تتبعها to + V وأفعال تتبعها V-ing (مع أزواج شائعة: stop/remember/try)",
+    "Reading: فكرة عامة + تفاصيل + مرادفات/مراجع",
+    "Listening: استماع موجّه حول تقليل المشتتات وتنظيم الوقت",
+    "Writing: خطة أسبوعية (6–8 جمل) تستخدم to/-ing بشكل صحيح"
+  ],
+  "vocabulary": [
+    {"w":"pressure","ar":"ضغط","ex":"Students feel pressure before exams."},
+    {"w":"deadline","ar":"موعد نهائي","ex":"We have a deadline on Monday."},
+    {"w":"schedule","ar":"جدول","ex":"I follow a simple schedule."},
+    {"w":"prioritize","ar":"يرتّب الأولويات","ex":"Prioritize the most important task."},
+    {"w":"task","ar":"مهمة","ex":"Finish one task at a time."},
+    {"w":"break","ar":"استراحة","ex":"Take a short break every 25 minutes."},
+    {"w":"focus","ar":"يركّز / تركيز","ex":"Focus on one small goal."},
+    {"w":"distraction","ar":"مُشتِّت","ex":"Phones are a big distraction."},
+    {"w":"procrastinate","ar":"يُسوّف","ex":"Do not procrastinate your work."},
+    {"w":"timer","ar":"مؤقّت","ex":"Use a timer to work in blocks."},
+    {"w":"checklist","ar":"قائمة فحص","ex":"A checklist helps you remember."},
+    {"w":"balance","ar":"توازن","ex":"Keep a balance between study and rest."},
+    {"w":"energy","ar":"طاقة","ex":"Eat well to keep your energy."},
+    {"w":"habit","ar":"عادة","ex":"Build a study habit every day."},
+    {"w":"efficient","ar":"فعّال","ex":"This method is efficient."},
+    {"w":"reduce","ar":"يقلّل","ex":"Reduce distractions in your room."},
+    {"w":"remove","ar":"يزيل","ex":"Remove your phone from the desk."},
+    {"w":"step-by-step","ar":"خطوة بخطوة","ex":"Study step-by-step."},
+    {"w":"progress","ar":"تقدّم","ex":"Small progress is still progress."},
+    {"w":"calm","ar":"هادئ / يهدّئ","ex":"Take deep breaths to feel calm."}
+  ],
+  "grammar": [
+    {
+      "title": "أفعال + to + V",
+      "when": "نُعبّر عن نوايا/خطط/قرارات",
+      "form": "want/need/plan/decide/hope/learn + to + V",
+      "signals": ["plan to study","need to focus","decide to start"]
+    },
+    {
+      "title": "أفعال + V-ing",
+      "when": "نُعبّر عن أنشطة/تجارب مفضّلة أو مستمرة",
+      "form": "enjoy/avoid/finish/keep (on)/practice/suggest + V-ing",
+      "signals": ["enjoy reading","avoid using the phone"]
+    },
+    {
+      "title": "أزواج شائعة (فرق المعنى)",
+      "when": "stop/remember/try",
+      "form": "stop + V-ing (إيقاف النشاط) / stop + to + V (إيقاف شيء آخر لعمل جديد) | remember/forget + to + V (قبل الفعل) vs + V-ing (ذكرى ماضية) | try + to + V (محاولة) vs + V-ing (تجربة طريقة)",
+      "signals": ["stop using / stop to rest","remember to bring","try to focus/try using a timer"]
+    }
+  ],
+  "grammarPractice": [
+    {"type":"mcq","q":"I plan ___ (start) at 7 pm.","choices":["to start","starting","to starting"],"a":0},
+    {"type":"mcq","q":"He enjoys ___ (read) before bed.","choices":["to read","reading","to reading"],"a":1},
+    {"type":"mcq","q":"She stopped ___ (use) her phone during study.","choices":["to use","using","to using"],"a":1},
+    {"type":"tf","q":"remember + to + V تُستخدم عندما نتذكّر شيئًا قبل فعله.", "a": true},
+    {"type":"fill","q":"Try ____ (use) a timer for 25 minutes.","a":"using"}
+  ],
+  "reading": {
+    "pre": "توقّع: ما فائدة تقسيم الدراسة إلى فترات قصيرة مع استراحات؟",
+    "text": "Many students study for long hours but lose focus. A simple method is to work for about 25 minutes, then take a 5-minute break. During the work time, remove distractions and follow a small checklist. After four rounds, take a longer break. This routine helps students reduce pressure and make steady progress.",
+    "tasks": [
+      {"type":"mcq","q":"The main idea is to:","choices":["study all night","use short focused blocks","avoid breaks"],"a":1},
+      {"type":"tf","q":"The text suggests removing distractions during work time.", "a": true},
+      {"type":"mcq","q":"'This routine' refers to:","choices":["the long break","the method of blocks and breaks","the checklist only"],"a":1}
+    ]
+  },
+  "listening": {
+    "src": "../audio/u03/track1.mp3",
+    "tasks": [
+      {"type":"tf","q":"The speaker recommends putting the phone away while studying.", "a": true},
+      {"type":"mcq","q":"He suggests trying:","choices":["music videos","a timer method","no breaks at all"],"a":1}
+    ]
+  },
+  "writing": {
+    "prompt": "اكتب خطة أسبوعية (6–8 جمل): (1) متى تدرس يوميًا، (2) كيف تقلّل المشتّتات، (3) جملة فيها to + V، (4) جملة فيها V-ing.",
+    "tips": [
+      "Use to + V for plans: I plan to study at 7 pm.",
+      "Use V-ing for activities: I enjoy reading summaries.",
+      "Keep sentences short. Check spelling and -s/-ing."
+    ],
+    "rubric": ["وضوح الهدف","ترابط بسيط","اختيار صحيح لـ to/-ing","إملاء"]
+  },
+  "exam": {
+    "passMark": 7,
+    "items": [
+      {"type":"mcq","q":"We decided ___ (start) early.","choices":["to start","starting","to starting"],"a":0},
+      {"type":"mcq","q":"They kept ___ (work) for 25 minutes.","choices":["to work","working","to working"],"a":1},
+      {"type":"tf","q":"stop + to + V يعني التوقف عن النشاط نفسه.","a": false},
+      {"type":"mcq","q":"Remember ___ (bring) your checklist.","choices":["bringing","to bring","to bringing"],"a":1},
+      {"type":"fill","q":"Avoid ____ (use) your phone during study.", "a":"using"},
+      {"type":"mcq","q":"He tried ___ (focus), but it was noisy.","choices":["to focus","focusing","to focusing"],"a":0},
+      {"type":"mcq","q":"Try ___ (use) a timer to be efficient.","choices":["to use","using","to using"],"a":1},
+      {"type":"tf","q":"enjoy + to + V صحيح دائمًا.", "a": false},
+      {"type":"mcq","q":"I need ___ (finish) this task before the deadline.","choices":["to finish","finishing","to finishing"],"a":0},
+      {"type":"fill","q":"She stopped ____ (check) messages and started studying.", "a":"checking"}
+    ]
+  },
+  "unlock": {
+    "requirements": [
+      "listeningDone",
+      "readingScore>=2",
+      "grammarScore>=3",
+      "writingSubmitted",
+      "examScore>=7"
+    ],
+    "nextWeek": 4"
+  }
+}

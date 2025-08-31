@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الأسبوع 7 – Unit 5 (Making Friends): -ed/-ing + Reduced Relatives + Phrasal Verbs</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header class="container">
+  <a class="back" href="../index.html">← العودة للصفحة الرئيسية</a>
+  <h2>الأسبوع 7: Unit 5 — Making Friends</h2>
+  <p class="sub">أنجز الاستماع والقراءة والقواعد والكتابة والامتحان. عند استيفاء الشروط، سيفتح الأسبوع التالي.</p>
+</header>
+
+<main class="container">
+  <div id="weekTargets" class="targets card"></div>
+
+  <section id="vocab" class="card">
+    <h3>Vocabulary (EN → AR)</h3>
+    <div id="vocabList"></div>
+  </section>
+
+  <section id="grammar" class="card">
+    <h3>Grammar ( -ed/-ing adjectives + Reduced Relatives + Phrasal Verbs on/out )</h3>
+    <div id="grammarBlocks"></div>
+    <div id="grammarPractice" style="margin-top:.5rem;"></div>
+  </section>
+
+  <section id="reading" class="card">
+    <h3>Reading</h3>
+    <div id="preReading" class="muted"></div>
+    <article id="readingText" class="reading-text" style="margin:.5rem 0;"></article>
+    <div id="readingTasks"></div>
+  </section>
+
+  <section id="listening" class="card">
+    <h3>Listening</h3>
+    <audio id="listenAudio" controls preload="none" style="width:100%;"></audio>
+    <div class="muted" style="margin:.5rem 0;">الإرشاد: استمع ثلاث مرات (فكرة عامة → كلمات مستهدفة → إجابة). أوقف/أعِد التشغيل حسب الحاجة.</div>
+    <div id="listeningTasks"></div>
+  </section>
+
+  <section id="writing" class="card">
+    <h3>Writing – Descriptive Paragraph (Friend Profile)</h3>
+    <p class="muted">اكتب 6–8 جمل تصف صديقًا/زميلًا: استخدم -ed/-ing adjective واحدًا على الأقل، وجملة واحدة **Reduced Relative**، وفعلاً مركّبًا من on/out (مثل: **carry on / find out / hang out / reach out**).</p>
+    <textarea id="writingInput" rows="8" placeholder="اكتب هنا فقرتك (6–8 جمل)..." style="margin:.5rem 0;"></textarea>
+    <div class="actions" style="display:flex;gap:.5rem;flex-wrap:wrap;">
+      <button id="saveWriting">حفظ المسودة</button>
+      <button id="markWriting">وضع علامة “تم”</button>
+    </div>
+  </section>
+
+  <section id="exam" class="card">
+    <h3>Mini Exam (10 أسئلة)</h3>
+    <div id="examBlock"></div>
+    <div class="actions" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem;">
+      <button id="submitExam">تسليم الامتحان</button>
+      <button id="showExamKey" class="ghost">إظهار المفاتيح (بعد التسليم)</button>
+    </div>
+    <p id="examResult" class="result" style="margin-top:.5rem;"></p>
+  </section>
+
+  <section id="unlock" class="card highlight">
+    <h3>بوابة الانتقال للأسبوع التالي</h3>
+    <ul id="unlockChecklist" class="checklist"></ul>
+    <button id="unlockWeek" disabled>فتح الأسبوع 8</button>
+  </section>
+</main>
+
+<footer class="container small">
+  <p>روتين ثابت: 10 كلمات جديدة + 20 مراجعة (1/3/7/14) + ظلّ الصوت 5 جُمل.</p>
+</footer>
+
+<!-- متغيّرات الصفحة لهذا الأسبوع -->
+<script>
+  window.weekNumber = 7;
+  window.dataFile   = "../data/week07.json";
+</script>
+
+<!-- تحميل التطبيق كـ ES Module -->
+<script type="module" src="../js/app.js"></script>
+</body>
+</html>

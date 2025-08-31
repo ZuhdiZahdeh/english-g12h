@@ -1,0 +1,35 @@
+﻿{
+  "title": "Mock 1 – Extended (20Q)",
+  "instructions": "أجب عن جميع الأسئلة. اقرأ القطعة بعناية قبل البدء بالأسئلة المتعلقة بها.",
+  "reading": {
+    "title": "Small Daily Actions",
+    "text": "Many students set huge goals at the start of a term but stop after two weeks. A better plan is to choose one small daily action, track it, and share progress with a friend. When problems appear, adjust the plan instead of quitting. After a month, the small steps add up to real change."
+  },
+  "exam": {
+    "passMark": 14,
+    "items": [
+      { "type": "mcq", "q": "Reading: The main idea is to:", "choices": ["make only huge goals", "use small daily actions and track them", "quit when problems appear"], "a": 1 },
+      { "type": "tf",  "q": "Reading: The text says big goals always work if you try hard.", "a": false },
+      { "type": "mcq", "q": "Reading: Sharing progress mainly helps to:", "choices": ["waste time", "increase motivation", "avoid planning"], "a": 1 },
+      { "type": "mcq", "q": "Reading: 'add up to' is closest in meaning to:", "choices": ["become a total/result", "subtract", "stop"], "a": 0 },
+      { "type": "mcq", "q": "Reading: When problems appear, you should:", "choices": ["quit", "adjust the plan", "hide the problems"], "a": 1 },
+
+      { "type": "mcq", "q": "Vocab: 'commitment' means:", "choices": ["التزام", "إجازة", "شك"], "a": 0 },
+      { "type": "mcq", "q": "Vocab: 'setbacks' means:", "choices": ["عثرات/تعثرات", "نجاحات", "خطط"], "a": 0 },
+      { "type": "mcq", "q": "Vocab: Choose the correct collocation:", "choices": ["do progress", "make progress", "make a progress"], "a": 1 },
+      { "type": "tf",  "q": "Vocab: 'deadline' = خطة عمل (plan).", "a": false },
+      { "type": "fill","q": "Vocab: step ____ step (اكتب كلمة واحدة).", "a": "by" },
+
+      { "type": "mcq", "q": "Grammar: I ___ (just / finish) the task.", "choices": ["just finish", "have just finished", "am just finishing"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: I ___ (walk) to school when it ___ (start) to rain.", "choices": ["walked / was starting", "was walking / started", "was walking / was started"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: We ___ each other since 2022.", "choices": ["knew", "have known", "are knowing"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: He stopped ___ (use) his phone while studying.", "choices": ["to use", "using", "to using"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: Remember ___ (bring) your ID.", "choices": ["bringing", "to bring", "to bringing"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: It ___ rain later, so take an umbrella.", "choices": ["must", "might", "can (certainty)"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: If you study, you ___ (pass).", "choices": ["passed", "will pass", "would pass"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: Choose the best linker: 'I was tired; ___, I finished the homework.'", "choices": ["however", "therefore", "and"], "a": 0 },
+      { "type": "mcq", "q": "Grammar: This method is ___ than the old one.", "choices": ["efficienter", "more efficient", "most efficient"], "a": 1 },
+      { "type": "mcq", "q": "Grammar: By the time we arrived, the film ___.", "choices": ["started", "had started", "was starting"], "a": 1 }
+    ]
+  }
+}
