@@ -1,0 +1,212 @@
+/* ================================
+   EF Palestine G12 – Base Styles
+   RTL-first, accessible, responsive
+   ================================ */
+
+:root{
+  /* Colors */
+  --bg: #f7f9f9;
+  --surface: #ffffff;
+  --ink: #122131;
+  --muted: #5b6d7a;
+  --primary: #0aa77a;
+  --primary-ink: #083f34;
+  --accent: #066a63;
+  --ok: #2ca24f;
+  --warn: #d97706;
+  --err: #c0392b;
+  --info: #2b7de9;
+
+  /* Radii & Shadow */
+  --r: 14px;
+  --shadow: 0 2px 10px #0001;
+
+  /* Spacing */
+  --gap: 1rem;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #0e1215;
+    --surface: #151b20;
+    --ink: #e8eef3;
+    --muted: #93a1ad;
+    --primary: #1fc899;
+    --primary-ink: #0d4a3f;
+    --accent: #19a39a;
+    --shadow: 0 2px 12px #0006;
+  }
+}
+
+/* Reset & Base */
+*{ box-sizing: border-box; }
+html, body{ margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+body{
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 system-ui, "Segoe UI", Tahoma, Arial, sans-serif;
+  direction: rtl;
+}
+img{ max-width:100%; height:auto; display:block; }
+a{ color: var(--accent); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+h1,h2,h3,h4{ margin: .5rem 0 .25rem; line-height:1.3; }
+p{ margin: .25rem 0 .75rem; }
+small, .small{ font-size:.9rem; }
+.muted{ color: var(--muted); }
+.text-center{ text-align:center; }
+
+/* Layout */
+.container{ width:min(1100px,92%); margin:auto; padding:1rem; }
+.header, header.container{ padding-block: 1.25rem; }
+footer.container{ padding-block: 1.25rem; border-top: 1px dashed #0002; }
+
+/* Week grid on home */
+.weeks-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.week-card{ transition: transform .12s ease; }
+.week-card:hover{ transform: translateY(-2px); }
+
+/* Cards */
+.card{
+  background: var(--surface);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.card.highlight{ border: 2px dashed var(--primary); }
+
+/* Badges (statuses) */
+.badge{
+  display:inline-block;
+  padding:.2rem .55rem;
+  border-radius: 999px;
+  font-size:.85rem;
+  line-height:1.2;
+}
+.badge.locked{ background:#e9ecef; color:#5f6b76; }
+.badge.open{ background:#dff8ef; color:#0a7; }
+.badge.done{ background:#e6ecff; color:#2a4; }
+
+/* Legend / Export sections */
+.legend, .export{ display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; }
+
+/* Links */
+.back{ color: var(--accent); text-decoration:none; }
+.back:hover{ text-decoration: underline; }
+
+/* Buttons (default) */
+button{
+  all: unset;
+  background: var(--primary);
+  color: #fff;
+  padding: .6rem .9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin: .25rem 0;
+  box-shadow: 0 1px 0 #0001;
+}
+button:hover{ filter: brightness(0.96); }
+button:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--primary) 45%, transparent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 6px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+button[disabled], button:disabled{
+  opacity:.55; cursor:not-allowed; filter: grayscale(.2);
+}
+button.ghost{ background:#eaeef0; color:#17222b; }
+button.danger{ background: var(--err); }
+button.secondary{ background: var(--accent); }
+
+/* Inputs */
+input[type="text"], textarea{
+  width:100%;
+  padding:.75rem .8rem;
+  border-radius: 10px;
+  border:1px solid #d7dee3;
+  background:#fff;
+  color:var(--ink);
+}
+textarea{ min-height: 7rem; resize: vertical; }
+input[type="text"]:focus, textarea:focus{
+  outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  border-color: var(--accent);
+}
+
+/* Admin toggle */
+.admin-toggle{ float: inline-end; display:inline-flex; gap:.5rem; align-items:center; }
+.admin-toggle input{ inline-size:1.2rem; block-size:1.2rem; }
+
+/* Targets & Checklist */
+.targets ul, .checklist{
+  padding:0; margin:.5rem 0; list-style:none;
+}
+.targets li::before{ content:"• "; color: var(--accent); }
+.checklist li{
+  display:flex; align-items:center; gap:.55rem; margin:.25rem 0;
+}
+.checklist input[type="checkbox"]{ transform: scale(1.1); }
+
+/* Reading text block */
+.reading-text{
+  line-height: 1.9;
+  background: #fcfffe;
+  border: 1px solid #e8f3ef;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Vocab table */
+.vocab-table{
+  width:100%; border-collapse: collapse; background:#fff; border-radius:10px; overflow:hidden;
+}
+.vocab-table th, .vocab-table td{
+  border:1px solid #e9eef2; padding:.6rem .55rem; vertical-align:top;
+}
+.vocab-table th{ background:#f5faf8; text-align: start; }
+
+/* Quiz question block */
+.question{
+  border:1px solid #e4e9ee;
+  border-radius: 8px;
+  padding: .65rem .7rem;
+  margin: .5rem 0;
+  background: #fafcfe;
+}
+.question p{ margin:.2rem 0 .45rem; }
+.question label{ display:inline-flex; gap:.35rem; align-items:center; margin-inline-end: .9rem; }
+.question input[type="radio"]{ transform: translateY(1px); }
+
+/* Exam result */
+.result{ font-weight:700; }
+
+/* Audio */
+audio{ inline-size:100%; }
+
+/* Utility chips */
+.badge.info{ background:#e8f2ff; color:#2b59c3; }
+.badge.warn{ background:#fff2df; color:#9a5b06; }
+.badge.err{ background:#ffe9e6; color:#b4372d; }
+
+/* Print */
+@media print{
+  header.container, footer.container, .legend, .export, .back{ display:none !important; }
+  .card{ box-shadow:none; border:1px solid #ddd; page-break-inside: avoid; }
+}
+
+/* Small screens */
+@media (max-width: 600px){
+  .reading-text{ font-size:.98rem; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+}
