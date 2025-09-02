@@ -115,6 +115,21 @@ if (!onHome) {
     // مفردات
     renderVocab(d.vocabulary || [], vocabList);
 
+    // === نشاط المطابقة للمفردات (إن وُجد في JSON) ===
+    const vocabMatchMount = document.getElementById("vocabMatchMount");
+    const gradeVMBtn      = document.getElementById("gradeVocabMatch");
+    const vmResult        = document.getElementById("vocabMatchResult");
+    if (d.vocabMatch && vocabMatchMount && gradeVMBtn) {
+      const qEl = renderQuestion(d.vocabMatch, 0);
+      vocabMatchMount.appendChild(qEl);
+
+      gradeVMBtn.addEventListener("click", () => {
+        const { score, total } = grade([d.vocabMatch], vocabMatchMount);
+        vmResult.textContent = `نتيجتك: ${score}/${total}`;
+        vmResult.className = "badge " + (score >= Math.ceil(total * 0.7) ? "done" : "warn");
+      });
+    }
+
     // قواعد + تدريب
     renderGrammar(d.grammar || [], grammarBlocks);
 
@@ -224,10 +239,7 @@ if (!onHome) {
         unlockUl.appendChild(li);
       });
 
-      const allOK = reqs.every(k => {
-        if (k in checks) return !!checks[k];
-        return false;
-      });
+      const allOK = reqs.every(k => (k in checks) ? !!checks[k] : false);
 
       if (unlockBtn) {
         unlockBtn.disabled = !allOK;
