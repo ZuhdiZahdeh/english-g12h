@@ -1,25 +1,34 @@
-// audio.js — علامة الاستماع + بثّ حدث مخصص لتحديث البوابة
+// audio.js — علامة الاستماع + إشعار البوابة
 import { loadProgress, saveProgress, getWeek } from "./storage.js";
 
-/**
- * ربط عنصر الصوت بالأسبوع:
- * - عند انتهاء التشغيل يوضع listening=true
- * - يبث حدثًا "listening-done" لتنبيه الصفحة لتحديث بوابة الفتح
- */
-export function setupAudio(audioEl, weekNumber) {
+export function setupAudio(audioEl, weekNumber){
   if (!audioEl) return;
-  const progress = loadProgress();
-  const wk = getWeek(progress, weekNumber);
+  const p = loadProgress();
+  const w = getWeek(p, weekNumber);
 
-  audioEl.addEventListener("ended", () => {
-    wk.listening = true;
-    saveProgress(progress);
-
-    // علّم مربع الشرط إن وُجد
+  const markDone = () => {
+    if (w.listening) return;               // لا تُكرّر
+    w.listening = true; saveProgress(p);
+    // حدّث خانة شرط الاستماع إن وُجدت
     const cb = document.querySelector('li[data-key="listeningDone"] input[type="checkbox"]');
     if (cb) cb.checked = true;
-
-    // بث حدث عام لتحديث واجهة البوابة
+    // أبْلِغ صفحة الأسبوع لتعيد رسم البوابة
     document.dispatchEvent(new CustomEvent("listening-done", { detail: { week: weekNumber } }));
+  };
+
+  // النهاية الطبيعية
+  audioEl.addEventListener("ended", markDone);
+
+  // لو توقّف وكان بالفعل عند النهاية
+  audioEl.addEventListener("pause", () => {
+    if (audioEl.ended) markDone();
+  });
+
+  // لو سحب الطالب الشريط لنهاية الملف
+  audioEl.addEventListener("timeupdate", () => {
+    if (audioEl.duration && audioEl.currentTime >= audioEl.duration - 0.25) {
+      // هامش 0.25 ثانية لالتقاط النهاية
+      markDone();
+    }
   });
 }
