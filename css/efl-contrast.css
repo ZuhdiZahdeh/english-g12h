@@ -1,1 +1,61 @@
+/* ========== High-Contrast cards for mobile & desktop ========== */
+:root{
+  --card-bg: #ffffff;
+  --card-text: #0f172a;      /* أسود مُريح للقراءة */
+  --card-muted: #334155;     /* رمادي داكن للعناوين الثانوية */
+  --card-accent: #0ea5e9;    /* أزرق فاتح للعناوين */
+}
 
+/* ثبّت الأبيض للخلفية ولون النص الداكن داخل البطاقات */
+.card, .activity-card, .quiz-card, fieldset, .panel {
+  background-color: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  border: 1px solid rgba(2, 6, 23, .08);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(2,6,23,.08), 0 8px 24px rgba(2,6,23,.06);
+}
+
+/* تأكيد لون كل العناصر النصية داخل البطاقة */
+.card *, .activity-card *, .quiz-card *, fieldset *, .panel *{
+  color: var(--card-text) !important;
+  opacity: 1 !important;            /* إزالة أي بهتان */
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* عناوين داخل البطاقات */
+.card h1, .card h2, .card h3,
+.activity-card h1, .activity-card h2, .activity-card h3 {
+  color: var(--card-accent) !important;
+  font-weight: 800;
+}
+
+/* عناصر النماذج داخل الكروت */
+.card label, .card legend, .card p, .card li { color: var(--card-text) !important; }
+.card input, .card select, .card textarea {
+  color: var(--card-text) !important;
+  background: #fff !important;
+  border-color: #cbd5e1 !important;
+}
+.card ::placeholder { color: #64748b !important; }
+
+/* خيار تصميم بلون أزرق فاتح خفيف للخلفية (إذا رغبت) */
+.card--lightblue{
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 70%) !important;
+  border-color: rgba(3,105,161,.18) !important;
+}
+.card--lightblue h1, .card--lightblue h2, .card--lightblue h3{
+  color: #0369a1 !important;
+}
+
+/* تحسين القراءة على الشاشات الصغيرة */
+@media (max-width: 480px){
+  .card, .activity-card, .quiz-card, fieldset, .panel{
+    padding: 14px;
+  }
+  .card p, .card li, .card label, .card legend,
+  .card input, .card select, .card textarea{
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+}
