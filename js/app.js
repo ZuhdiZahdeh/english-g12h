@@ -179,6 +179,20 @@ if (!onHome) {
     document.addEventListener("listening-done", (ev) => {
       if (ev.detail?.week === n) drawUnlock(d);
     });
+// زر معلم: اعتبار الاستماع منجزًا
+const pAdmin = loadProgress();
+if (pAdmin.admin) {
+  const adminBtn = document.createElement("button");
+  adminBtn.className = "ghost";
+  adminBtn.textContent = "(معلم) اعتبار الاستماع مُنجزًا";
+  adminBtn.addEventListener("click", () => {
+    const pp = loadProgress(); const ww = getWeek(pp, n);
+    ww.listening = true; saveProgress(pp);
+    document.dispatchEvent(new CustomEvent("listening-done", { detail: { week: n } }));
+  });
+  // ضع الزر تحت تعليمات الاستماع
+  document.querySelector("#listening .muted")?.appendChild(adminBtn);
+}
 
     // كتابة
     saveWritingBtn?.addEventListener("click", () => {
@@ -261,3 +275,4 @@ if (!onHome) {
     });
   }
 }
+
