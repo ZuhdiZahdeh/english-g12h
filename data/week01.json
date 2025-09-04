@@ -75,14 +75,17 @@
       { "type": "mcq", "q": "The word 'they' in line 2 refers to:", "choices": ["teachers","students","parents"], "a": 1 }
     ]
   },
-
-  "listening": {
-    "src": "../audio/u01/track1.mp3",
-    "tasks": [
-      { "type": "tf",  "q": "The speaker suggests small daily goals.", "a": true },
-      { "type": "mcq", "q": "He speaks mainly about:", "choices": ["exams","confidence","vocabulary only"], "a": 1 }
-    ]
-  },
+   
+"listening": {
+  "src": "../audio/u01/track1.mp3",
+  "tasks": [
+    { "type": "tf",  "q": "The speaker suggests small daily goals.", "a": true },
+    { "type": "mcq", "q": "He speaks mainly about:", "choices": ["exams", "confidence", "vocabulary only"], "a": 1 },
+    { "type": "tf",  "q": "He says it is okay to start with one small action each day.", "a": true },
+    { "type": "mcq", "q": "He recommends to:", "choices": ["quit if it is hard", "adjust the plan and continue", "wait for a perfect time"], "a": 1 },
+    { "type": "mcq", "q": "He asks you to share progress with a:", "choices": ["friend", "referee", "stranger"], "a": 0 }
+  ]
+},
 
   "writing": {
     "prompt": "Personal Statement – مقدمة (3–4 جمل): عرّف بنفسك، هدفك في الإنجليزية هذا الفصل، وخطوة صغيرة يومية.",
@@ -111,4 +114,5 @@
     "nextWeek": 2
   }
 }
+
 
