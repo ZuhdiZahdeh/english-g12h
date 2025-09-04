@@ -81,9 +81,16 @@
   "tasks": [
     { "type": "tf",  "q": "The speaker suggests small daily goals.", "a": true },
     { "type": "mcq", "q": "He speaks mainly about:", "choices": ["exams", "confidence", "vocabulary only"], "a": 1 },
+
     { "type": "tf",  "q": "He says it is okay to start with one small action each day.", "a": true },
     { "type": "mcq", "q": "He recommends to:", "choices": ["quit if it is hard", "adjust the plan and continue", "wait for a perfect time"], "a": 1 },
-    { "type": "mcq", "q": "He asks you to share progress with a:", "choices": ["friend", "referee", "stranger"], "a": 0 }
+    { "type": "mcq", "q": "He asks you to share progress with a:", "choices": ["friend", "referee", "stranger"], "a": 0 },
+
+    { "type": "tf",  "q": "He says you must be perfect from day one.", "a": false },
+    { "type": "tf",  "q": "Small steps can build confidence.", "a": true },
+    { "type": "mcq", "q": "When you make a mistake, you should:", "choices": ["stop and quit", "learn and try again", "hide it"], "a": 1 },
+    { "type": "mcq", "q": "How often does he suggest practice?", "choices": ["every day", "once a month", "only before exams"], "a": 0 },
+    { "type": "tf",  "q": "He suggests tracking your progress.", "a": true }
   ]
 },
 
@@ -114,5 +121,6 @@
     "nextWeek": 2
   }
 }
+
 
 
