@@ -75,9 +75,9 @@
       { "type": "mcq", "q": "The word 'they' in line 2 refers to:", "choices": ["teachers","students","parents"], "a": 1 }
     ]
   },
-   
-"listening": {
+   "listening": {
   "src": "../audio/u01/track1.mp3",
+  "passMark": 7,
   "tasks": [
     { "type": "tf",  "q": "The speaker suggests small daily goals.", "a": true },
     { "type": "mcq", "q": "He speaks mainly about:", "choices": ["exams", "confidence", "vocabulary only"], "a": 1 },
@@ -116,11 +116,12 @@
     ]
   },
 
-  "unlock": {
-    "requirements": ["listeningDone","readingScore>=2","grammarScore>=3","writingSubmitted","examScore>=7"],
-    "nextWeek": 2
-  }
+"unlock": {
+  "requirements": ["listeningScore>=7","readingScore>=2","grammarScore>=3","writingSubmitted","examScore>=7"],
+  "nextWeek": 2
 }
+}
+
 
 
 
