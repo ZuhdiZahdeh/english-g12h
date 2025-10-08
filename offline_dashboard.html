@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة محلية بدون إنترنت | Offline Learning Profile Dashboard</title>
+<style>
+  :root{--brand:#2563eb;--border:#e5e7eb;--muted:#6b7280;--ink:#111827;--card:#f8fafc}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);background:#fff}
+  header{padding:16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+  header h1{margin:0;font-size:20px}
+  .container{max-width:1100px;margin:0 auto;padding:16px}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .col{flex:1;min-width:280px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+  label{font-size:12px;color:var(--muted)}
+  input[type="file"]{margin-top:8px}
+  table{width:100%;border-collapse:collapse;margin-top:10px}
+  th,td{border:1px solid var(--border);padding:8px;text-align:right}
+  th{background:#eef2ff}
+  .btn{border:1px solid var(--border);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer}
+  .btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+  canvas{border:1px solid var(--border);border-radius:8px;background:#fff}
+  .muted{color:var(--muted)}
+  .flex{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .badge{border:1px solid var(--border);border-radius:999px;padding:2px 8px;font-size:11px;color:var(--muted);background:#fff}
+</style>
+</head>
+<body>
+<header>
+  <h1>لوحة ملفّ التعلّم الذكي (محليًا)</h1>
+  <span class="badge">يعمل بلا إنترنت</span>
+  <span class="badge">لا تُحفظ أصوات/صور — نصوص مشتقة فقط</span>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col card">
+      <label>تحميل ملف بيانات JSON (قائمة طلاب)</label><br>
+      <input type="file" accept=".json" id="fileInput">
+      <div class="flex" style="margin-top:10px">
+        <button class="btn" onclick="loadSample()">تحميل عينة</button>
+        <button class="btn" onclick="clearAll()">مسح</button>
+      </div>
+      <p class="muted">صيغة متوقعة: مصفوفة طلاب بكل طالب حقول: student_id, student_name, indicators{communication,problem_solving,task_focus,strategy_flex,collaboration}, interests, strengths, improve, recs, consent, session_date, grade.</p>
+    </div>
+    <div class="col card">
+      <label>مؤشرات عامة</label>
+      <table id="summaryTbl">
+        <thead><tr><th>المؤشر</th><th>متوسط</th><th>عدد الطلاب</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:16px">
+    <div class="col card">
+      <label>قائمة الطلاب</label>
+      <table id="studentsTbl">
+        <thead><tr><th>الطالب</th><th>المعرّف</th><th>درجة التواصل</th><th>حل المشكلات</th><th>فتح التقرير</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="col card">
+      <label>رسم بياني بسيط (متوسط المؤشرات)</label>
+      <canvas id="chart" width="500" height="300"></canvas>
+      <div class="muted">رسم بدون مكتبات خارجية.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+let students = [];
+
+function clearAll(){
+  students = [];
+  renderTables();
+  drawChart();
+}
+
+function loadSample(){
+  // small sample in-memory
+  students = [
+    {
+      student_name:"أحمد خالد", student_id:"S-0007", grade:"10", session_date:"2025-10-10", consent:true,
+      indicators:{communication:4,problem_solving:3,task_focus:5,strategy_flex:3,collaboration:4},
+      interests:"علوم، برمجة، إلكترونيات",
+      strengths:"يشرح بأمثلة واقعية، يعمل بهدوء مع الفريق",
+      improve:"يوثّق خطوات الحلّ بشكل أوضح",
+      recs:"حل مسألتين أسبوعيًا مع تبرير؛ عرض شفهي 90 ثانية؛ مراجعة بعد أسبوعين"
+    },
+    {
+      student_name:"ميرا القيسي", student_id:"S-0012", grade:"11", session_date:"2025-10-11", consent:true,
+      indicators:{communication:5,problem_solving:4,task_focus:4,strategy_flex:4,collaboration:5},
+      interests:"تصميم، فنون رقمية، أحياء",
+      strengths:"تواصل متميز، تنظيم ممتاز",
+      improve:"تزيد من تنويع الاستراتيجيات في المسائل المعقّدة",
+      recs:"مشروع مصغر في التصميم العلمي؛ نقاش أسبوعي حول استراتيجية بديلة"
+    }
+  ];
+  renderTables();
+  drawChart();
+}
+
+document.getElementById('fileInput').addEventListener('change', (ev)=>{
+  const f = ev.target.files[0];
+  if(!f) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const data = JSON.parse(reader.result);
+      if(Array.isArray(data)){ students = data; renderTables(); drawChart(); }
+      else alert('JSON يجب أن يكون مصفوفة طلاب');
+    }catch(e){ alert('فشل قراءة JSON'); }
+  };
+  reader.readAsText(f,'utf-8');
+});
+
+function avg(arr){return arr.length? arr.reduce((a,b)=>a+b,0)/arr.length : 0}
+
+function computeSummary(){
+  const keys = ['communication','problem_solving','task_focus','strategy_flex','collaboration'];
+  const out = {};
+  keys.forEach(k=>{
+    out[k] = avg(students.map(s=> (s.indicators?.[k]||0) ));
+  });
+  return out;
+}
+
+function renderTables(){
+  // Summary
+  const tbody = document.querySelector('#summaryTbl tbody');
+  tbody.innerHTML = '';
+  const mapNames = {
+    communication:'التواصل', problem_solving:'حل المشكلات', task_focus:'الانتباه', strategy_flex:'مرونة الاستراتيجية', collaboration:'التعاون'
+  };
+  const sum = computeSummary();
+  Object.keys(sum).forEach(k=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${mapNames[k]}</td><td>${sum[k].toFixed(2)}</td><td>${students.length}</td>`;
+    tbody.appendChild(tr);
+  });
+  // Students
+  const st = document.querySelector('#studentsTbl tbody');
+  st.innerHTML = '';
+  students.forEach((s,i)=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${s.student_name||''}</td>
+      <td>${s.student_id||''}</td>
+      <td>${s.indicators?.communication||''}</td>
+      <td>${s.indicators?.problem_solving||''}</td>
+      <td><button class="btn primary" onclick="openReport(${i})">فتح التقرير</button></td>
+    `;
+    st.appendChild(tr);
+  });
+}
+
+function drawChart(){
+  const c = document.getElementById('chart');
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0,0,c.width,c.height);
+  // axes
+  ctx.strokeStyle = '#e5e7eb'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(40,10); ctx.lineTo(40,260); ctx.lineTo(480,260); ctx.stroke();
+  const keys = ['التواصل','حل المشكلات','الانتباه','مرونة','التعاون'];
+  const vals = Object.values(computeSummary());
+  const max = 5;
+  const barW = 60, gap = 20;
+  vals.forEach((v,idx)=>{
+    const x = 60 + idx*(barW+gap);
+    const h = (v/max)*220;
+    ctx.fillStyle = '#2563eb';
+    ctx.fillRect(x, 260 - h, barW, h);
+    ctx.fillStyle = '#111827';
+    ctx.fillText(v.toFixed(2), x+12, 260 - h - 6);
+    ctx.fillStyle = '#6b7280';
+    ctx.fillText(keys[idx], x+2, 280);
+  });
+}
+
+function openReport(i){
+  const s = students[i];
+  const b64 = btoa(JSON.stringify({
+    student_name:s.student_name, student_id:s.student_id, session_date:s.session_date, grade:s.grade, consent:s.consent,
+    indicators:s.indicators, evidence:s.evidence||{}, interests:s.interests||'', strengths:s.strengths||'', improve:s.improve||'', recs:s.recs||''
+  }));
+  // ضع report و dashboard في نفس المجلد
+  const url = 'student_report_template.html?data='+b64;
+  window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
