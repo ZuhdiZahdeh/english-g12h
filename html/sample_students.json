@@ -1,0 +1,38 @@
+[
+  {
+    "student_name": "أحمد خالد",
+    "student_id": "S-0007",
+    "grade": "10",
+    "session_date": "2025-10-10",
+    "consent": true,
+    "indicators": {
+      "communication": 4,
+      "problem_solving": 3,
+      "task_focus": 5,
+      "strategy_flex": 3,
+      "collaboration": 4
+    },
+    "interests": "علوم، برمجة، إلكترونيات",
+    "strengths": "يشرح بأمثلة واقعية، يعمل بهدوء مع الفريق",
+    "improve": "يوثّق خطوات الحلّ بشكل أوضح",
+    "recs": "حل مسألتين أسبوعيًا مع تبرير؛ عرض شفهي 90 ثانية؛ مراجعة بعد أسبوعين"
+  },
+  {
+    "student_name": "ميرا القيسي",
+    "student_id": "S-0012",
+    "grade": "11",
+    "session_date": "2025-10-11",
+    "consent": true,
+    "indicators": {
+      "communication": 5,
+      "problem_solving": 4,
+      "task_focus": 4,
+      "strategy_flex": 4,
+      "collaboration": 5
+    },
+    "interests": "تصميم، فنون رقمية، أحياء",
+    "strengths": "تواصل متميز، تنظيم ممتاز",
+    "improve": "تزيد من تنويع الاستراتيجيات في المسائل المعقّدة",
+    "recs": "مشروع مصغر في التصميم العلمي؛ نقاش أسبوعي حول استراتيجية بديلة"
+  }
+]
