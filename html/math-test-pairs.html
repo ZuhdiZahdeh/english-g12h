@@ -1,1 +1,229 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حيلة غاوس – تزاوج الأعداد (سُلّم المكعبات)</title>
+  <style>
+    :root{
+      --block: 28px;            /* حجم المربّع */
+      --gap: 6px;               /* المسافة بين المربعات */
+      --a: #2563eb;             /* لون أساسي (A) */
+      --b: #10b981;             /* لون مكمل (B) */
+      --bg: #0b1220;            /* خلفية داكنة أنيقة */
+      --panel: #0f172a;         /* لوح التحكم */
+      --text: #e2e8f0;          /* نص */
+      --muted: #94a3b8;         /* نص ثانوي */
+      --accent: #f59e0b;        /* إبراز */
+      --pair-outline: #f59e0bcc;/* حدود عند الاكتمال */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:System-ui,Segoe UI,Roboto,Tajawal,Arial,Helvetica,sans-serif;background:linear-gradient(120deg,#0a0f1d,#111827);color:var(--text)}
+    header{
+      padding:18px 20px 8px; text-align:center; line-height:1.5;
+    }
+    header h1{margin:0;font-size:1.4rem;font-weight:800}
+    header p{margin:.3rem 0 0;color:var(--muted);font-size:.95rem}.shell{max-width:1000px;margin:0 auto;padding:10px 16px 32px}
 
+.panel{
+  background:var(--panel);border:1px solid #1e293b; border-radius:16px; padding:14px; display:flex;flex-wrap:wrap;align-items:center;gap:10px;box-shadow:0 10px 30px rgb(0 0 0 / .25)
+}
+.panel label{font-size:.9rem;color:var(--muted)}
+.panel input[type=range]{width:200px}
+.panel .btn{
+  appearance:none;border:none;cursor:pointer;border-radius:12px;padding:10px 14px;font-weight:700;background:#1f2937;color:#e5e7eb;transition:.2s transform, .2s opacity, .2s background;
+}
+.panel .btn:hover{transform:translateY(-2px);background:#374151}
+.panel .btn:active{transform:translateY(0)}
+.panel .btn.primary{background:var(--a);color:white}
+.panel .btn.primary:hover{background:#1d4ed8}
+.panel .btn.ghost{background:transparent;border:1px solid #334155}
+
+.arena{
+  position:relative; margin:18px auto 6px; padding:18px; border-radius:18px; border:1px solid #1e293b; background: radial-gradient(1200px 400px at 50% -10%, rgba(59,130,246,.18), rgba(16,185,129,.12) 30%, rgba(0,0,0,0) 70%), #0b1220; box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+}
+.arena .grid{display:flex;flex-direction:column;align-items:flex-start;gap:var(--gap);min-height:calc( (var(--block) + var(--gap)) * 8 );}
+
+.row{display:flex;align-items:center;gap:var(--gap);position:relative;min-height:var(--block)}
+.row .label{width:40px;text-align:center;color:var(--muted);font-size:.85rem}
+
+.group{display:flex;gap:var(--gap)}
+.block{width:var(--block);height:var(--block);border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.06)}
+.block.a{background:linear-gradient(180deg, #3b82f6, #1e40af)}
+.block.b{background:linear-gradient(180deg, #34d399, #065f46)}
+
+/* مجموعة المكمل (B) تبدأ خارج المشهد لأسفل ثم تصعد أثناء الأنيميشن */
+.group.b{transform:translateY(110%);opacity:0}
+.group.b.in{transform:translateY(0);opacity:1;transition:transform 600ms cubic-bezier(.2,.8,.2,1), opacity 600ms ease}
+
+.wrap{display:flex;align-items:flex-end;gap:12px}
+
+.legend{display:flex;gap:12px;align-items:center;margin-top:10px;color:var(--muted);font-size:.9rem}
+.k{display:inline-flex;align-items:center;gap:6px}
+.pill{width:14px;height:14px;border-radius:4px;display:inline-block}
+
+.formula{margin-top:16px;border-top:1px dashed #273449;padding-top:12px;color:#e5e7eb}
+.formula .eq{font-weight:800}
+.hint{color:var(--muted);font-size:.9rem}
+
+.footer{margin-top:8px;color:var(--muted);font-size:.85rem;text-align:center}
+
+/* مستطيل الإطار بعد اكتمال التزاوج (للتوضيح البصري لـ n × (n+1)) */
+.arena.complete::after{
+  content:""; position:absolute; inset:18px; border:2px dashed var(--pair-outline); border-radius:14px; pointer-events:none; animation:outlinePulse 1.2s ease 1;
+}
+@keyframes outlinePulse{0%{transform:scale(.98);opacity:.4}100%{transform:scale(1);opacity:1}}
+
+/* استجابة */
+@media (max-width:600px){
+  :root{--block:22px; --gap:5px}
+  .panel{gap:8px}
+  .panel input[type=range]{width:140px}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>حيلة غاوس – تجميع (تزاوج) الأعداد بصريًا</h1>
+    <p>نُنشئ سُلّمًا من المكعبات من 1 إلى <b id="nLabel">20</b>، ثم نُكمّله بمكعبات مكافئة لتكوين مستطيل أبعاده <span id="dimsLabel">20 × 21</span> ليتضح أن <span class="eq">2S = n(n+1)</span> ثم <span class="eq">S = n(n+1)/2</span>.</p>
+  </header>  <div class="shell">
+    <div class="panel" role="region" aria-label="لوح التحكم">
+      <label for="n">عدد الدرجات (n): <b id="nVal">20</b></label>
+      <input id="n" type="range" min="1" max="30" step="1" value="20" aria-label="عدد الدرجات" />
+      <label for="speed">السرعة:</label>
+      <select id="speed" aria-label="سرعة الأنيميشن">
+        <option value="800">بطيء</option>
+        <option value="600" selected>متوسط</option>
+        <option value="350">سريع</option>
+      </select>
+      <button class="btn primary" id="play">تشغيل التزاوج</button>
+      <button class="btn ghost" id="step">خطوة</button>
+      <button class="btn ghost" id="reset">إعادة الضبط</button>
+      <span class="hint">نصيحة: عدّل n ثم اضغط تشغيل. يمكنك المشاهدة خطوة بخطوة أيضًا.</span>
+    </div><div class="arena" id="arena">
+  <div class="grid" id="grid" aria-live="polite"></div>
+  <div class="legend" aria-hidden="true">
+    <span class="k"><span class="pill" style="background:linear-gradient(180deg,#3b82f6,#1e40af)"></span> السُلّم الأصلي (A)</span>
+    <span class="k"><span class="pill" style="background:linear-gradient(180deg,#34d399,#065f46)"></span> المكمل (B) لإكمال المستطيل</span>
+  </div>
+  <div class="formula" id="formula">
+    <div>2S = n(n+1) ← لأن سُلّمين متكاملين يشكّلان مستطيلًا بعدده <span id="rectCells">420</span> مكعبًا.</div>
+    <div>إذن S = \dfrac{n(n+1)}{2} = <b id="sum">210</b> مكعّبًا.</div>
+  </div>
+</div>
+
+<div class="footer">صُمِّم للشرح الصفي لمرحلة الصف الخامس–السابع. يمكنك تعديل عدد الدرجات والسرعة، وتشغيل الأنيميشن خطوة بخطوة.</div>
+
+  </div>  <script>
+    // Utility: create element
+    const el = (tag, cls, text) => { const e = document.createElement(tag); if(cls) e.className = cls; if(text!=null) e.textContent = text; return e; };
+
+    const nInput = document.getElementById('n');
+    const nVal   = document.getElementById('nVal');
+    const nLabel = document.getElementById('nLabel');
+    const dimsLabel = document.getElementById('dimsLabel');
+    const rectCells = document.getElementById('rectCells');
+    const sumEl  = document.getElementById('sum');
+    const grid   = document.getElementById('grid');
+    const arena  = document.getElementById('arena');
+    const playBtn= document.getElementById('play');
+    const stepBtn= document.getElementById('step');
+    const resetBtn=document.getElementById('reset');
+    const speedSel=document.getElementById('speed');
+
+    let currentN = parseInt(nInput.value, 10);
+    let stepIndex = 0; // أي صف تم إدخاله من مجموعة B
+
+    // بناء المشهد
+    function build(n){
+      grid.innerHTML = '';
+      arena.classList.remove('complete');
+      stepIndex = 0;
+      for(let r=1; r<=n; r++){
+        const row = el('div','row');
+
+        // رقم الصف (اختياري للشرح)
+        const label = el('div','label', r);
+        row.appendChild(label);
+
+        // مجموعة A: تمثل السُلم الأصلي بعدد r
+        const groupA = el('div','group a');
+        for(let i=0;i<r;i++) groupA.appendChild(el('div','block a'));
+        row.appendChild(groupA);
+
+        // فجوة صغيرة لتوضيح أن B يكمل إلى (n+1)
+        const spacer = el('div'); spacer.style.width = '8px'; row.appendChild(spacer);
+
+        // مجموعة B: عددها (n+1-r) ستظهر لاحقًا بالأنيميشن لتكمّل المستطيل
+        const groupB = el('div','group b');
+        groupB.dataset.size = (n+1-r);
+        for(let i=0;i<(n+1-r);i++) groupB.appendChild(el('div','block b'));
+        row.appendChild(groupB);
+
+        grid.appendChild(row);
+      }
+
+      // تحديث العناوين والقيم
+      nVal.textContent = n;
+      nLabel.textContent = n;
+      dimsLabel.textContent = n + ' × ' + (n+1);
+      rectCells.textContent = n * (n+1);
+      sumEl.textContent = (n*(n+1))/2;
+
+      // ضبط عرض الحلبة تقريبًا بحيث تتسع للمستطيل n × (n+1)
+      const block = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--block'));
+      const gap = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gap'));
+      const approxWidth = (block + gap) * (n+1) + 140; // + مساحة الأرقام يمين الصف
+      grid.style.minWidth = Math.max(approxWidth, 420) + 'px';
+    }
+
+    // إظهار مجموعة B في صف واحد (خطوة)
+    function revealRowB(index){
+      const rows = Array.from(grid.querySelectorAll('.row'));
+      if(index >= rows.length) return false;
+      const b = rows[index].querySelector('.group.b');
+      if(!b) return false;
+      const duration = parseInt(speedSel.value,10);
+      // force reflow to ensure transition applies even when toggled quickly
+      b.getBoundingClientRect();
+      b.style.transitionDuration = duration+'ms';
+      b.classList.add('in');
+      return true;
+    }
+
+    // تشغيل متتابع
+    async function play(){
+      playBtn.disabled = true; stepBtn.disabled = true; nInput.disabled = true; speedSel.disabled = true;
+      const rows = Array.from(grid.querySelectorAll('.row'));
+      const duration = parseInt(speedSel.value,10);
+      for(let i=stepIndex;i<rows.length;i++){
+        revealRowB(i);
+        stepIndex = i+1;
+        await new Promise(res=>setTimeout(res, duration*0.9));
+      }
+      // إطار المستطيل للإيضاح
+      arena.classList.add('complete');
+      playBtn.disabled = false; stepBtn.disabled = false; nInput.disabled = false; speedSel.disabled = false;
+    }
+
+    function reset(){
+      build(currentN);
+    }
+
+    // أحداث الواجهة
+    nInput.addEventListener('input', e=>{
+      currentN = parseInt(e.target.value,10);
+      build(currentN);
+    });
+
+    playBtn.addEventListener('click', play);
+    stepBtn.addEventListener('click', ()=>{
+      const ok = revealRowB(stepIndex);
+      if(ok){ stepIndex++; if(stepIndex===currentN){ arena.classList.add('complete'); } }
+    });
+    resetBtn.addEventListener('click', reset);
+
+    // تهيئة أولية
+    build(currentN);
+  </script></body>
+</html>
